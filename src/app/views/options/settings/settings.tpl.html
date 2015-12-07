@@ -1,0 +1,54 @@
+<form name="optionsCtrl.form" class="xbw-settings content" novalidate>
+
+    <span layout="row" class="category md-padding">
+        <p class="title">General</p>
+        <md-content flex>
+            <div layout="row" layout-align="start center">
+                <md-input-container flex>
+                    <label>Games folder path</label>
+                    <input name="gamesFolderPath" ng-model="optionsCtrl.config.gamesFolderPath" ng-blur="optionsCtrl.save()" ng-pattern="/games$/"/>
+                    <div ng-messages="form.gamesFolderPath.$error">
+                        <div ng-message="pattern">The name has to be less than 2 characters long.</div>
+                    </div>
+                </md-input-container>
+                <file-picker ng-model="options.gamesFolderPath"></file-picker>
+            </div>
+
+            <md-input-container>
+                <label>{{ 'options.language' | translate }}</label>
+                <md-select ng-model="optionsCtrl.config.language" ng-change="optionsCtrl.changeLanguage()">
+                    <md-option ng-repeat="language in optionsCtrl.languages" value="{{ language.key }}">{{ language.value }}</md-option>
+                </md-select>
+            </md-input-container>
+        </md-content>
+    </span>
+
+    <!--<hr/>-->
+
+    <span layout="row" class="category md-padding">
+        <p class="title">Abgx360</p>
+        <!--<span flex></span>
+        <md-switch ng-model="data.cb1" aria-label="Switch 1"></md-switch>-->
+        <md-content flex>
+            <md-input-container>
+                <label>Abgx360 options</label>
+                <input ng-model="optionsCtrl.config.abgxOptions" ng-blur="optionsCtrl.save()">
+            </md-input-container>
+        </md-content>
+    </span>
+
+    <!--<hr/>-->
+
+    <span layout="row" class="category md-padding">
+        <p class="title">WiFi Interface</p>
+        <!--<span flex></span>
+        <md-switch ng-model="data.cb1" aria-label="Switch 1"></md-switch>-->
+        <md-content flex>
+            <md-input-container>
+                <label>IP address</label>
+                <input type="text" mask="255.255.255.255" restrict="select" ng-model="test">
+           </md-input-container>
+        </md-content>
+    </span>
+
+</form>

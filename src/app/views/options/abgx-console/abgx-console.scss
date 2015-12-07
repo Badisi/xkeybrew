@@ -1,0 +1,40 @@
+.abgx-console {
+
+    padding: 8px 0 76px 0;
+    background: black;
+
+    .md-subheader {
+        $subheader-height: 40px;
+
+        margin-right: 0;
+
+        .md-subheader-inner {
+            padding: 6px 16px;
+            line-height: 1em;
+            background: white;
+
+            .title {
+                color: rgb(255,64,129);
+                line-height: $subheader-height;
+            }
+
+            md-progress-circular {
+                height: 20px;
+                margin-right: -35px;
+                margin-top: 2px;
+            }
+
+            .btn-close {
+                line-height: $subheader-height;
+                height: $subheader-height;
+                width: $subheader-height;
+                margin-right: -4px;
+            }
+        }
+    }
+
+    iframe {
+        padding-bottom: 8px;
+        border: 0;
+    }
+}

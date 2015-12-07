@@ -1,0 +1,65 @@
+<div class="xbw-dvdmenu">
+<!--<div ui-view class="jumbotron dvdmenu-view">-->
+    <nav>
+        <a class="dv-prev" ng-show="previousMenu" ui-sref="dvdmenu.view({ index:currentMenuIndex-1 })">
+            <span>
+                <svg width="32" height="32" viewBox="0 0 64 64">
+                    <path d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+                </svg>
+            </span>
+            <div>
+                <h3>{{ previousMenu.title }}<span>{{ previousMenu.copyright }}</span></h3>
+            </div>
+        </a>
+        <a class="dv-next" ng-show="nextMenu" ui-sref="dvdmenu.view({ index:currentMenuIndex+1 })">
+            <span>
+                <svg width="32" height="32" viewBox="0 0 64 64">
+                    <path d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+                </svg>
+            </span>
+            <div>
+                <h3>{{ nextMenu.title }}<span>{{ nextMenu.copyright }}</span></h3>
+            </div>
+        </a>
+    </nav>
+    <h2>{{ currentMenu.title }}</h2>
+
+
+
+
+    <!-- FAB POPUP -->
+    <div id="fab-popup" layout="column" layout-align="space-between" ng-if="showAddButtons" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+        <md-button class="md-fab md-raised" ng-click="openDialog($event);" aria-label="New document">
+            <md-icon md-svg-src="assets/icons/alarm.svg" style="width: 24px; height: 24px;"></md-icon>
+            <!--<md-tooltip>-->
+                <!--Add Quote-->
+            <!--</md-tooltip>-->
+        </md-button>
+        <md-button class="md-fab md-raised" ng-click="openDialog($event);" aria-label="New document">
+            <md-icon md-svg-src="assets/icons/alarm.svg" style="width: 24px; height: 24px;"></md-icon>
+            <!--<md-tooltip>-->
+                <!--Add Text-->
+            <!--</md-tooltip>-->
+        </md-button>
+        <md-button class="md-fab md-raised" ng-click="openDialog($event);" aria-label="New document">
+            <md-icon md-svg-src="assets/icons/alarm.svg" style="width: 24px; height: 24px;"></md-icon>
+            <!--<md-tooltip>-->
+                <!--Add Image-->
+            <!--</md-tooltip>-->
+        </md-button>
+        <md-button class="md-fab md-raised" ng-click="openDialog($event);" aria-label="New document">
+            <md-icon md-svg-src="assets/icons/alarm.svg" style="width: 24px; height: 24px;"></md-icon>
+            <!--<md-tooltip>-->
+                <!--Add Video-->
+            <!--</md-tooltip>-->
+        </md-button>
+    </div>
+
+    <!-- HOVERING FAB -->
+    <!-- <md-button  class="md-fab md-raised" ng-click="showAddButtons = !showAddButtons;" aria-label="New document">
+        <md-icon icon="bower_components/material-design-icons/content/svg/production/ic_add_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+    </md-button> -->
+    <md-button id="mainFab" class="md-fab md-raised" ng-click="showAddButtons = !showAddButtons;" aria-label="Photos">
+      <md-icon md-svg-src="assets/icons/alarm.svg" style="width: 24px; height: 24px;"></md-icon>
+    </md-button>
+</div>

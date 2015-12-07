@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>XKeyBrew</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+       <!--<link rel="stylesheet" href="app/vendor.css">-->
+       <!-- bower:css -->
+	      <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+       <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+       <!-- inject:css -->
+          <!-- css files will be automatically insert here -->
+       <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <!--<body ng-app="xbw" ng-controller="AppCtrl" layout="row">
+      <div class="app" layout="row" flex ui-view></div>-->
+
+
+      <!--<div style="position:absolute;background:red;z-index:9999;top:64px;left:256px;width:720px;height:540px;"></div>-->
+
+      <!--<preloader value="loadValue" loaded="loaded">-->
+
+        <!--<nav class="navbar navbar-fixed-top navbar-custom"
+             ng-class="{visible:(!state.is('main') && (state.current.name !== ''))}"
+             role="navigation">
+
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ui-sref="main">xkeybrew</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ui-sref-active="active">
+                            <a ui-sref="games">GAMES</a>
+                        </li>
+                        <li ng-class="{active:state.includes('dvdmenu')}">
+                            <a ui-sref="dvdmenu.view({index:0})">DVD-MENU</a>
+                        </li>
+                        <!--<li ui-sref-active="active">
+                            <a ui-sref="options">EXTRA</a>
+                        </li>--
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div ui-view></div>-->
+
+    <!--</preloader>-->
+
+    <!-- build:js(src) scripts/vendor.js -->
+       <!-- bower:js -->
+          <!-- run `gulp inject` to automatically populate bower script dependencies -->
+	   <!-- endbower -->
+	<!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+      <!-- inject:js -->
+        <!-- js files will be automatically insert here -->
+      <!-- endinject -->
+
+      <!-- inject:partials -->
+        <!-- angular templates will be automaticaly converted in js and inserted here -->
+      <!-- endinject -->
+    <!-- endbuild -->
+
+  <!--</body>-->
+</html>

@@ -1,0 +1,11 @@
+.star-rating {
+
+    .md-button.md-icon-button {
+        margin: 0;
+        $size: 34px;
+        width: $size;
+        height: $size;
+        line-height: $size;
+        min-height: $size;
+    }
+}

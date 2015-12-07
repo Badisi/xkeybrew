@@ -1,0 +1,84 @@
+<div class="xbw-games" ng-class="{ 'md-fab-toolbar-open':gamesCtrl.toolbarIsOpen }" layout="column" flex layout-fill>
+
+    <md-fab-toolbar md-direction="left" md-open="gamesCtrl.toolbarIsOpen" fab-toolbar-extra>
+        <md-fab-trigger class="align-with-text">
+            <md-button aria-label="menu" class="md-fab md-accent">
+                <md-icon ng-md-icon icon="menu" size="20px"></md-icon>
+            </md-button>
+        </md-fab-trigger>
+        <md-toolbar>
+            <md-fab-actions class="md-toolbar-tools">
+
+                <md-button aria-label="close" class="md-icon-button close">
+                    <md-icon ng-md-icon icon="close"></md-icon>
+                </md-button>
+
+                <md-menu md-position-mode="target-right target prevent">
+                    <md-button aria-label="sort" class="md-icon-button prevent" ng-click="$mdOpenMenu($event)">
+                        <md-icon ng-md-icon icon="sort"></md-icon>
+                    </md-button>
+                    <md-menu-content class="xbw-games-toolbar-menu prevent" width="3">
+                        <md-menu-item ng-repeat="item in gamesCtrl.config.groupByItems">
+                            <md-button class="md-accent"
+                                       ng-class="{ 'indent':(gamesCtrl.config.groupBy !== item) }"
+                                       ng-click="gamesCtrl.config.groupBy = item; gamesCtrl.filterItems();">
+                                <md-icon ng-md-icon icon="check" ng-if="gamesCtrl.config.groupBy === item"></md-icon>
+                                {{ item.label | translate }}
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+
+                <md-button aria-label="favorite" class="md-icon-button prevent">
+                    <md-icon ng-md-icon icon="favorite"></md-icon>
+                </md-button>
+
+                <md-button aria-label="played" class="md-icon-button prevent">
+                    <md-icon ng-md-icon icon="visibility"></md-icon>
+                </md-button>
+
+                <span class="search prevent">
+                    <md-icon ng-md-icon icon="search"></md-icon>
+                    <input ng-model="gamesCtrl.config.search" ng-change="gamesCtrl.filterItems()" placeholder="Search..." type="search">
+                </span>
+
+                <span spacer></span>
+
+                <md-button aria-label="cols" class="md-fab prevent" ng-click="gamesCtrl.mdCols = 10">10</md-button>
+                <md-button aria-label="cols" class="md-fab prevent" ng-click="gamesCtrl.mdCols = 7">7</md-button>
+                <md-button aria-label="cols" class="md-fab prevent" ng-click="gamesCtrl.mdCols = 5">5</md-button>
+
+            </md-fab-actions>
+        </md-toolbar>
+    </md-fab-toolbar>
+
+    <!--<loader ng-if="store.isLoading" effect="effect2"></loader>-->
+
+    <md-content class="gallery">
+        <section ng-repeat="group in gamesCtrl.filteredItems">
+
+            <md-subheader class="md-primary" ng-if="!(gamesCtrl.config.groupBy.key === 'none')">
+                {{ (group.$key !== 'null' && group.$key !== 'undefined') ? group.$key : '?' | uppercase }}
+            </md-subheader>
+
+            <md-grid-list md-cols="{{ gamesCtrl.mdCols }}" md-row-height="219:300" md-gutter="10px">
+
+                <md-grid-tile ng-repeat="item in group | orderBy:gamesCtrl.config.orderBy" ng-click="gamesCtrl.select($event, item)">
+                    <div class="tile" layout="column" layout-fill>
+                        <div class="cover" flex background="{{ item.iso.frontCoverPath() }}"></div>
+						<figcaption>
+                            <md-button aria-label="played" class="md-icon-button md-primary prevent">
+                                <md-icon ng-md-icon icon="favorite"></md-icon>
+                            </md-button>
+						</figcaption>
+                    </div>
+                </md-grid-tile>
+
+            </md-grid-list>
+
+        </section>
+    </md-content>
+
+    <games-details-modal></games-details-modal>
+
+</div>

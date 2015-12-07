@@ -1,0 +1,62 @@
+<div class="xbw-template drag" layout="column" flex>
+
+    <md-toolbar class="template-toolbar">
+        <div class="md-toolbar-tools" flex>
+
+            <div class="left" layout="row" layout-align="end center" layout-fill>
+                <win-btns></win-btns>
+                <a ng-href="#/">
+                    <img src="assets/images/xbw.png"/>
+                </a>
+            </div>
+
+            <div class="right md-toolbar-item" layout="row" layout-align="start center" layout-fill flex>
+                <md-button class="md-icon-button"
+                           md-ink-ripple="#3F51B5"
+                           aria-label="home"
+                           ui-sref-active="active"
+                           ui-sref="dvdmenu">
+                    <md-icon ng-md-icon icon="home"></md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button"
+                           md-ink-ripple="#3F51B5"
+                           aria-label="games"
+                           ui-sref-active="active"
+                           ui-sref="games">
+                    <md-icon ng-md-icon icon="dashboard"></md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button"
+                           md-ink-ripple="#3F51B5"
+                           aria-label="options"
+                           ui-sref-active="active"
+                           ui-sref="options">
+                    <md-icon ng-md-icon icon="settings"></md-icon>
+                </md-button>
+
+                <span flex></span>
+
+                <md-button class="md-icon-button"
+                           aria-label="Install with NPM"
+                           target="_blank"
+                           ng-href="https://www.npmjs.com/package/angular-material">
+                    <md-tooltip md-autohide>Contribute</md-tooltip>
+                    <md-icon class="paypal" md-svg-src="assets/icons/paypal.svg"></md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button bitbucket"
+                           aria-label="View Source on Github"
+                           target="_blank"
+                           ng-href="{{BUILDCONFIG.repository}}/{{menu.version.current.github}}">
+                   <md-tooltip md-autohide>View on Bitbucket</md-tooltip>
+                   <md-icon md-svg-src="assets/icons/bitbucket.svg"></md-icon>
+                </md-button>
+            </div>
+
+        </div>
+    </md-toolbar>
+
+    <md-content ui-view="content" layout="column" class="no-drag" layout-fill flex></md-content>
+
+</div>

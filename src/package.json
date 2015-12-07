@@ -1,0 +1,21 @@
+{
+    "name": "XKeyBrew",
+    "description": "Badisi @ 2013-2015",
+    "version": "2.0",
+    "node-remote": "http://localhost:3000",
+    "main": "http://localhost:3000/index.html2",
+    "js-flags": "--expose-gc",
+    "window": {
+        "show": true,
+        "transparent": false,
+        "resizable": true,
+        "toolbar": true,
+        "frame": true,
+        "width": 1024,
+        "height": 640
+    },
+	"permissions": [
+      	"node",
+      	"fileSystem"
+  	]
+}

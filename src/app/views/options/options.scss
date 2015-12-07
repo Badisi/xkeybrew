@@ -1,0 +1,17 @@
+@import 'abgx-console/abgx-console';
+@import 'about/about';
+@import 'extra/extra';
+@import 'settings/settings';
+
+.xbw-options {
+
+    [role="tabpanel"] {
+        transition: none;
+    }
+
+    md-tabs-content-wrapper {
+        //background: #f7f7f7;
+        //background: #1F2123;
+    }
+
+}

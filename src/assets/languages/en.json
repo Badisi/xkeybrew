@@ -1,0 +1,25 @@
+{
+    "error.gamesFolderNotFound": "Games folder cannot be found",
+    "error.gamesFolderNotCorrectlySpelled": "Games folder should be lowercase",
+
+    "filter.title": "Title",
+    "filter.titleId": "Title ID",
+
+    "group.none": "None",
+    "group.genre": "Genre",
+    "group.region": "Region",
+    "group.developer": "Developer",
+    "group.publisher": "Publisher",
+
+    "game.id": "ID",
+    "game.name": "NAME",
+    "game.disc": "DISC",
+    "game.genre": "GENRE",
+    "game.region": "REGION",
+    "game.developer": "DEVELOPER",
+    "game.publisher": "PUBLISHER",
+    "game.releaseDate": "RELEASE",
+    "game.overview": "OVERVIEW",
+
+    "options.language": "Language"
+}
