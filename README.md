@@ -11,7 +11,7 @@ XKeyBrew
 ##### Found a Bug or Issue?
 
 If you find a bug within the application or a mistake in the documentation, you can help us by
-submitting an issue to our [Issues Tracker][issues]. Even better you can submit a **Pull Request**
+submitting an issue to our [Issues Tracker][issues]. Even better you can submit a Pull Request
 with a fix. Your custom changes can be crafted in a repository fork and submitted to XKeyBrew repository 
 as a [Pull Request](pulls).
 
@@ -27,9 +27,7 @@ If you would like to implement a new feature then consider what kind of change i
 submitting an issue to our [Issues Tracker][issues] so that we can better coordinate our efforts,
 prevent duplication of work and help you to craft the change so that it is successfully accepted
 into the project.
-* **Small Changes** can be crafted and submitted to XKeyBrew repository [Pull Request](pulls).
-
-- [Issue Guidelines](docs/guides/CONTRIBUTING.md#submit)
+* **Small Changes** can be crafted and submitted to XKeyBrew repository as a [Pull Request](pulls).
 
 
 ## <a name="contributing"></a> Contributing
