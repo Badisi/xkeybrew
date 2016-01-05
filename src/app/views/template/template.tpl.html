@@ -1,10 +1,10 @@
 <div class="xbw-template drag" layout="column" flex>
 
-    <md-toolbar class="template-toolbar">
+    <md-toolbar class="template-toolbar md-whiteframe-3dp">
         <div class="md-toolbar-tools" flex>
 
             <div class="left" layout="row" layout-align="end center" layout-fill>
-                <win-btns></win-btns>
+                <!--<win-btns></win-btns>-->
                 <a ng-href="#/">
                     <img src="assets/images/xbw.png"/>
                 </a>
@@ -37,20 +37,20 @@
 
                 <span flex></span>
 
-                <md-button class="md-icon-button"
-                           aria-label="Install with NPM"
+                <md-button class="md-icon-button paypal"
+                           aria-label="Contribute"
                            target="_blank"
-                           ng-href="https://www.npmjs.com/package/angular-material">
+                           ng-click="templateCtrl.openPaypal()">
                     <md-tooltip md-autohide>Contribute</md-tooltip>
-                    <md-icon class="paypal" md-svg-src="assets/icons/paypal.svg"></md-icon>
+                    <md-icon md-svg-src="assets/icons/paypal.svg"></md-icon>
                 </md-button>
 
-                <md-button class="md-icon-button bitbucket"
+				<md-button class="md-icon-button github"
                            aria-label="View Source on Github"
                            target="_blank"
-                           ng-href="{{BUILDCONFIG.repository}}/{{menu.version.current.github}}">
-                   <md-tooltip md-autohide>View on Bitbucket</md-tooltip>
-                   <md-icon md-svg-src="assets/icons/bitbucket.svg"></md-icon>
+                           ng-click="templateCtrl.openGithub()">
+                   <md-tooltip md-autohide>View on Github</md-tooltip>
+                   <md-icon ng-md-icon icon="github-circle"></md-icon>
                 </md-button>
             </div>
 

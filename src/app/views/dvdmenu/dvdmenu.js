@@ -25,30 +25,16 @@
     app.config(function( $stateProvider ) {
         $stateProvider
             .state('dvdmenu', {
-                //abstract: true,
                 parent: 'template',
                 url: '/dvdmenu',
                 views: {
                     'content': {
                         templateUrl: 'app/views/dvdmenu/dvdmenu.tpl.html',
+						controllerAs: 'dvdMenuCtrl',
                         controller: 'DvdMenuCtrl',
-                        controllerAs: 'dvdMenuCtrl',
                         bindToController: true
                     }
-                },
-                /*resolve: {
-                    menus: function( Java, Http ) {
-                        // Load menus
-                        if( Java.isLoaded() ) {
-                            return angular.fromJson(Java.getDvdMenus());
-                        } else {
-                            // Use mocked data when in debug mode
-                            return Http.get('data/themes.json').then(function(data) {
-                                return data;
-                            });
-                        }
-                    }
-                }*/
+                }
             })
             .state('dvdmenu.view', {
                 url: '/:index',
@@ -59,10 +45,8 @@
     });
 
     // Controller
-    app.controller('DvdMenuCtrl', function( $scope ) {
+    app.controller('DvdMenuCtrl', function() {
         var dvdMenuCtrl = this;
-
-        console.log('dvdmenu');
 
         dvdMenuCtrl.currentMenuIndex = -1;
         dvdMenuCtrl.currentMenu = null;
@@ -70,7 +54,7 @@
         dvdMenuCtrl.nextMenu = null;
 
         // Helper(s)
-        function getMenuAtIndex(index) {
+        /*function getMenuAtIndex(index) {
             return (index >= 0 && index < menus.length) ? menus[index] : null;
         }
 
@@ -81,7 +65,7 @@
             dvdMenuCtrl.currentMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex);
             dvdMenuCtrl.previousMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex - 1);
             dvdMenuCtrl.nextMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex + 1);
-        };
+        };*/
     });
 
 }(angular.module('xbw.dvdmenu', [

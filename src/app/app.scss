@@ -1,32 +1,12 @@
-//$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-//@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
-
 // Components
-@import 'components/win-btns/win-btns';
 @import 'components/star-rating/star-rating';
 @import 'components/file-picker/file-picker';
-////@import 'components/loader/loader';
-//@import 'components/preloader/preloader';
-//@import 'components/splitview/splitview';
-//@import 'views/titlebar/titlebar';
 
 // Views
 @import 'views/template/template';
 @import 'views/games/games';
-////@import 'views/dvdmenu/dvdmenu';
+@import 'views/dvdmenu/dvdmenu';
 @import 'views/options/options';
-
-//@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
-/*@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'codropsicons';
-    src:url('../assets/fonts/codropsicons/codropsicons.eot');
-    src:url('../assets/fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/codropsicons/codropsicons.woff') format('woff'),
-        url('../assets/fonts/codropsicons/codropsicons.ttf') format('truetype'),
-        url('../assets/fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}*/
 
 // TODO: use local font instead
 @import url(http://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic);
@@ -49,8 +29,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
-	/* Better Font Rendering =========== */
+	// Better font rendering
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -63,7 +42,6 @@ md-toast {
 	z-index: 1901;
 	margin-top: 65px;
 }
-
 
 // ----------------------------------------------------
 
@@ -102,13 +80,9 @@ form[name="editableForm"] select {
   width: 120px;
 }
 
-
 // ----------------------------------------------------
 
-
-
 html, body {
-	//font-family: 'Raleway', Arial, sans-serif;
     -webkit-user-select: none;
     cursor: default;
 	overflow: hidden;
@@ -119,15 +93,12 @@ html, body {
     padding: 0;
 
   	font-size: 1rem;
-	//font-weight: 400;
 
     .app {
         box-sizing: border-box;
         border-radius: .4em;
-        //background: #333;
         background: #000;
         height: 100vh;
-        //border: 1px solid #333;
     }
 
 	a {
@@ -146,11 +117,3 @@ html, body {
 		-webkit-app-region: no-drag;
 	}
 }
-
-/*.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}*/

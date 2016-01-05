@@ -1,7 +1,7 @@
 (function(app) {
     'use strict';
 
-    app.directive('filePicker', function( $timeout ) {
+    app.directive('filePicker', function() {
         return {
             restrict: 'EA',
             templateUrl: 'app/components/file-picker/file-picker.tpl.html',
@@ -11,23 +11,19 @@
             link: function( scope, el, attrs ) {
                 var button = el.find('button');
                 var input = el.find('input');
-                var timer = null;
 
-                input.change(function(e) {
+                input.on('change', function(e) {
                     scope.ngModel = e.target.files[0].path;
                     scope.$apply();
                 });
 
-                button.click(function() {
-                    //timer = $timeout(function() {
-                        input[0].click();
-                    //}, 450);
+                button.on('click', function() {
+                    input[0].click();
                 });
 
                 scope.$on('$destroy', function() {
                     input.off('change');
                     button.off('click');
-                    $timeout.cancel(timer);
                 });
             }
         };

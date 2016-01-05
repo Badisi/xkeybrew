@@ -31,6 +31,5 @@ module.exports = function(options) {
 		.pipe($.inject(injectScripts, injectOptions))
 		.pipe(wiredep(options.wiredep))
 		.pipe(gulp.dest(options.tmp + '/serve'));
-
 	});
 };

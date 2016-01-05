@@ -4,20 +4,19 @@ XKeyBrew
 ## Installing
 
 ```bash
-$ npm install -g gulp node-gyp nw-gyp node-webkit-builder
+$ npm install -g gulp electron-prebuilt
 ```
 
-## Testing in a browser
+## Starting dev server
 
 ```bash
 $ gulp serve
 ```
 
-## Testing in nw
+## Testing in electron
 
 ```bash
-$ gulp nw
-$ gulp nw-offline
+$ gulp electron
 ```
 
 ## Building app

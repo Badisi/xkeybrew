@@ -9,8 +9,8 @@
             views: {
                 'content': {
                     templateUrl: 'app/views/options/options.tpl.html',
+					controllerAs: 'optionsCtrl',
                     controller: 'OptionsCtrl',
-                    controllerAs: 'optionsCtrl',
                     bindToController: true
                 }
             }
@@ -21,9 +21,17 @@
     app.controller('OptionsCtrl', function( $scope, $filter, $translate, $mdToast, $mdBottomSheet, Store, Config, CFG_LANGUAGES ) {
         var optionsCtrl = this;
 
-        optionsCtrl.config = angular.copy(Config.data);
+        optionsCtrl.config = angular.copy(Config.prefs);
         optionsCtrl.languages = CFG_LANGUAGES;
         optionsCtrl.items = Store.items;
+
+		// WATCHER(s)
+
+		$scope.$watch('optionsCtrl.form.$dirty', function(newValue, oldvalue) {
+        	if( newValue ) {
+				optionsCtrl.save();
+			}
+		});
 
         // HANDLER(s)
 
@@ -43,12 +51,11 @@
 
         optionsCtrl.resetDefaults = function() {
             Config.resetDetaults();
-            optionsCtrl.config = angular.copy(Config.data);
+            optionsCtrl.config = angular.copy(Config.prefs);
         };
 
         optionsCtrl.changeLanguage = function() {
             $translate.use(optionsCtrl.config.language);
-            optionsCtrl.save();
         };
 
         optionsCtrl.showAbgxConsole = function($event) {
@@ -60,7 +67,7 @@
                 targetEvent: $event,
                 locals: { files:getSelectedFiles() }
             }).then(function(results) {
-
+				// TODO:
             });
         };
 

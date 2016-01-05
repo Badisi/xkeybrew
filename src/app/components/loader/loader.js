@@ -1,6 +1,7 @@
 (function(app) {
     'use strict';
 
+	// not used, TODO:
     app.directive('loader', function() {
         return {
             restrict: 'E',

@@ -1,5 +1,5 @@
 (function(app) {
-    /*'use strict';
+    'use strict';
 
     app.factory('Worker', function( $timeout, Config, Logger ) {
         var childProcess = require('child_process');
@@ -18,7 +18,8 @@
                     xbwDisconnect();
                 }
                 if( xbw === null ) {
-                    xbw = childProcess.fork('app/core/worker/xbw.js', [], {silent:true});
+					// TODO: not so sure of that path... especially when it will comes to debug or prod..
+                    xbw = childProcess.fork('src/app/core/worker/xbw.js', [], { silent: true });
 
                     // Register for messages from worker
                     xbw.stdout.on('data', function(data) { Logger.log(String(data)); });
@@ -71,7 +72,7 @@
 
         worker.getWebInfos = function(url) {
             return Q.Promise(function(resolve, reject, notify) {
-                var params = { url:url, timeout:Config.get('requestTimeout') };
+                var params = { url:url, timeout:Config.prefs.requestTimeout };
                 request(params, function(err, resp, body) {
                     if( !err && (resp.statusCode === 200) ) {
                         var $ = cheerio.load(body);
@@ -147,7 +148,7 @@
         };
 
         return worker;
-    });*/
+    });
 
 }(angular.module('xbw.worker', [
 ])));

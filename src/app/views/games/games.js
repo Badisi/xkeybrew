@@ -2,15 +2,15 @@
     'use strict';
 
     // Route
-    app.config(function($stateProvider) {
+    app.config(function( $stateProvider ) {
         $stateProvider.state('games', {
             parent: 'template',
             url: '/games',
             views: {
                 'content': {
                     templateUrl: 'app/views/games/games.tpl.html',
+					controllerAs: 'gamesCtrl',
                     controller: 'GamesCtrl',
-                    controllerAs: 'gamesCtrl',
                     bindToController: true
                 }
             }
@@ -36,7 +36,7 @@
     });
 
     // Controller
-    app.controller('GamesCtrl', function( $scope, $mdDialog, $timeout, $filter, $parse, Store, GamesConfig ) {
+    app.controller('GamesCtrl', function( $scope, $document, $mdDialog, $timeout, $filter, $parse, Store, Cache, GamesConfig ) {
         var gamesCtrl = this;
 
         gamesCtrl.config = GamesConfig;
@@ -55,19 +55,25 @@
 
         // Handler(s)
 
+		gamesCtrl.test = function(mdOpenMenu, e) {
+			$timeout(function() {
+				mdOpenMenu(e);
+			});
+		};
+
         gamesCtrl.select = function($event, item) {
             $mdDialog.show({
                 templateUrl: 'app/views/games/details/games-details.tpl.html',
                 controller: 'GamesDetailsCtrl',
                 controllerAs: 'gamesDetailsCtrl',
                 bindToController: true,
-                parent: angular.element('md-content[ui-view="content"]'),
+                parent: angular.element(document.querySelector('md-content[ui-view="content"]')),
                 targetEvent: $event,
                 clickOutsideToClose: false,
                 locals: { item:item }
             }).then(function() {
                 //console.log('closed');
-                global.gc();
+                //global.gc();
             }, function() {
 
             });
@@ -93,40 +99,35 @@
         $timeout(test, 10);*/
 
 
-        // function refreshItems() {
-        //     Cache.isos().forEach(function(iso) {
-        //         $scope.items.push({
-        //             iso: iso,
-        //             game: Cache.gameById(iso.gameId)
-        //         });
-        //     });
-        // }
-        //
-        // function loadData() {
-        //     console.log('load cache');
-        //     return Store.loadCache().then(function() {
-        //         console.log('finish');
-        //         /*return Store.loadGamesFolder()
-        //             .fail(function(err) {
-        //                 //TODO: show message in alert & check weither we could proceed or not
-        //                 console.error(err);
-        //             });*/
-        //     });
-        // }
-        //
-        // function init() {
-        //     loadData().then(refreshItems);
-        // }
-        // init();
+        /*function refreshItems() {
+            Cache.isos().forEach(function(iso) {
+                $scope.items.push({
+                    iso: iso,
+                    game: Cache.gameById(iso.gameId)
+                });
+            });
+        }
+
+        function loadData() {
+            console.log('load cache');
+            return Store.loadCache().then(function() {
+                console.log('finish');
+                //return Store.loadGamesFolder()
+                //    .fail(function(err) {
+                //        //TODO: show message in alert & check weither we could proceed or not
+                //        console.error(err);
+                //    });
+            });
+        }
+
+        function init() {
+            loadData().then(refreshItems);
+        }
+        init();*/
 
     });
 
 }(angular.module('xbw.games', [
     'angular.filter',
     'xbw.games.details'
-//    'ui.router',
-//    'angular.filter',
-//    'xbw.games.gallery',
-//    'xbw.common',
-//    'xbw.vo'
 ])));

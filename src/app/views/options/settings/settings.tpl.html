@@ -2,7 +2,7 @@
 
     <span layout="row" class="category md-padding">
         <p class="title">General</p>
-        <md-content flex>
+        <md-content layout="column" flex>
             <div layout="row" layout-align="start center">
                 <md-input-container flex>
                     <label>Games folder path</label>
@@ -11,8 +11,15 @@
                         <div ng-message="pattern">The name has to be less than 2 characters long.</div>
                     </div>
                 </md-input-container>
-                <file-picker ng-model="options.gamesFolderPath"></file-picker>
+                <file-picker ng-model="optionsCtrl.config.gamesFolderPath"></file-picker>
             </div>
+
+			<md-input-container>
+				<!-- TODO: translate -->
+				<md-checkbox ng-model="optionsCtrl.config.loadGamesFolder" aria-label="Load games folder on startup">
+            		Load games folder on startup
+          		</md-checkbox>
+			</md-input-container>
 
             <md-input-container>
                 <label>{{ 'options.language' | translate }}</label>
@@ -30,7 +37,7 @@
         <!--<span flex></span>
         <md-switch ng-model="data.cb1" aria-label="Switch 1"></md-switch>-->
         <md-content flex>
-            <md-input-container>
+            <md-input-container layout="row">
                 <label>Abgx360 options</label>
                 <input ng-model="optionsCtrl.config.abgxOptions" ng-blur="optionsCtrl.save()">
             </md-input-container>

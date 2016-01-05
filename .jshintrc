@@ -22,7 +22,7 @@
   "validthis": true,
   "globals": {
     "angular": false,
-    "$": false,
+	"document": false,
     "Q": false
   }
 }

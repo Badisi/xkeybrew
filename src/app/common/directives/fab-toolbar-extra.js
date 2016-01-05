@@ -1,12 +1,12 @@
 (function(app) {
     'use strict';
 
-    app.directive('fabToolbarExtra', function() {
+    app.directive('fabToolbarExtra', function( $document ) {
         return {
             restrict: 'A',
             compile: function(el) {
-                el.click(function(e) {
-                    var target = $(e.target);
+                el.on('click', function(e) {
+                    var target = angular.element(e.target);
                     if( target.hasClass('prevent') || target.parent().hasClass('prevent') ) {
                         e.stopImmediatePropagation();
                         e.stopPropagation();
@@ -21,11 +21,15 @@
 
                 return {
                     post: function postLink(scope, el) {
+						var querySelector = function(selector) {
+							return angular.element(el[0].querySelector(selector));
+						};
+
                         // Hack on md-fab-toolbar to make use of a flex spacer
-                        el.find('span[spacer]').parent().addClass('flex');
+                        querySelector('span[spacer]').parent().addClass('flex');
 
                         // Hack on md-fab-toolbar to make children hidden by default
-                        el.find('.md-fab-action-item').css('transition-delay', '325ms');
+                        querySelector('.md-fab-action-item').css('transition-delay', '325ms');
                     },
                     pre: function preLink(scope, el) {
                         scope.$on('$destroy', function() {

@@ -2,7 +2,7 @@
     'use strict';
 
     // Controller
-    app.controller('AbgxConsoleCtrl', function( $scope, $timeout, $mdBottomSheet, Config, Worker, files ) {
+    app.controller('AbgxConsoleCtrl', function( $scope, $document, $timeout, $mdBottomSheet, Config, Worker, files ) {
         var abgxConsoleCtrl = this;
 
         var timer = null;
@@ -50,9 +50,9 @@
                     stopWorker();
                     $scope.$apply();
                 };
-                Worker.verifiedWithAbgx360(files, Config.data.abgxOptions.split(' '))
+                Worker.verifiedWithAbgx360(files, Config.prefs.abgxOptions.split(' '))
                     .progress(function(data) {
-                        if( iframeDoc && iframeWin ) {
+						if( iframeDoc && iframeWin ) {
                             if( data.indexOf('<placeholder>') !== -1 ) {
                                 if( placeholderEl === null ) {
                                     // Write placceholder in the dom
@@ -87,7 +87,7 @@
         (function() {
             // Delay it as iframe is not yet accessible on dom
             timer = $timeout(function() {
-                iframeEl = $('#iframe')[0];
+                iframeEl = document.getElementById('iframe');
                 iframeWin = iframeEl.contentWindow;
                 iframeDoc = iframeEl.contentDocument;
                 startWorker();

@@ -1,8 +1,9 @@
 (function(app) {
     'use strict';
 
+	// not used, TODO: check VS electron 'title-bar-style'
     app.directive('winBtns', function() {
-        var win = require('nw.gui').Window.get();
+		var win = require('electron').BrowserWindow.getFocusedWindow();
 
         return {
             restrict: 'E',

@@ -2,7 +2,7 @@
     'use strict';
 
     app.factory('Cache', function( Http, Utils, GameVO, IsoVO ) {
-        var loki = require('lokijs');
+        var Loki = require('lokijs');
         var fs = require('fs');
         var Q = require('q');
 
@@ -35,7 +35,7 @@
 
         cache.loadFromFile = function(file) {
             return Q.Promise(function(resolve, reject, notify) {
-                _db = new loki(file);
+                _db = new Loki(file);
 
                 if( fs.existsSync(file) ) {
                     _db.loadDatabase({ games: { proto: GameVO }, isos: { proto: IsoVO } }, resolve);

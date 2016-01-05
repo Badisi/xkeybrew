@@ -2,6 +2,7 @@
     ///* global Modernizr:true */
     'use strict';
 
+	// not used, TODO:
     app.directive('preloader', function( $window ) {
         /*function noscroll() {
             $window.scrollTo(0, 0);

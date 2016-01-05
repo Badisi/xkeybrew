@@ -104,7 +104,6 @@
 
                 xexInfos.forEach(function(xexInfo) {
                     if( xexInfo.is360ISO ) {
-                        console.log(xexInfo);
                         addOrUpdate(xexInfo, true);
                     } else {
                         addOrUpdateUnknown(xexInfo.file);
@@ -113,7 +112,7 @@
 
                 Cache.save();
             } catch(err) {
-                console.error(err);
+                Logger.error(err);
             }
         }
 
@@ -125,7 +124,7 @@
 
         function loadGamesFolder() {
             return Q.Promise(function(resolve, reject, notify) {
-                var gamesFolderPath = Config.get('gamesFolderPath');
+                var gamesFolderPath = Config.prefs.gamesFolderPath;
                 if( !fs.existsSync(gamesFolderPath) ) {
                     return $translate('error.gamesFolderNotFound').then(reject);
                 } else if( path.basename(gamesFolderPath) !== CFG_APP.gamesFolderName ) {
@@ -151,8 +150,7 @@
                         me.isLoading = true;
                         me.items.length = 0;
 
-                        //return loadCache().then(loadGamesFolder).then(function() {
-                        return loadCache().then(function() {
+						var loadFinish = function() {
                             Cache.isos().forEach(function(iso) {
                                 me.items.push({
                                     iso: iso,
@@ -164,7 +162,13 @@
                             me.isLoading = false;
                             me.isLoaded = true;
                             resolve();
-                        });
+                        };
+
+						if( Config.prefs.loadGamesFolder ) {
+                        	return loadCache().then(loadGamesFolder).then(loadFinish);
+						} else {
+							return loadCache().then(loadFinish);
+						}
                     }
                     resolve();
                 });
