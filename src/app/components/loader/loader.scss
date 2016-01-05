@@ -1,0 +1,133 @@
+.xbw-loader {
+    &.effect1 {
+        $border: 6px solid #008f00;
+
+        position: absolute;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        perspective: 800px;
+
+        .inner {
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            &.one {
+                left: 0%;
+                top: 0%;
+                border-bottom: $border;
+                @include animation(rotate-one 1s linear infinite);
+            }
+
+            &.two {
+                right: 0%;
+                top: 0%;
+                border-right: $border;
+                @include animation(rotate-two 1s linear infinite);
+            }
+
+            &.three {
+                right: 0%;
+                bottom: 0%;
+                border-top: $border;
+                @include animation(rotate-three 1s linear infinite);
+            }
+
+            @keyframes rotate-one {
+                0% {
+                    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+                }
+            }
+
+            @keyframes rotate-two {
+                0% {
+                    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+                }
+            }
+
+            @keyframes rotate-three {
+                0% {
+                    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+                }
+            }
+        }
+    }
+
+    &.effect2 {
+        $blue: rgba(0,183,229,0.9);
+        $blueShadow: darken($blue, 30%);
+        $cyan: rgba(0,229,183,0.9);
+        $cyanShadow: darken($cyan, 30%);
+
+        @mixin square ($xy:30px) {
+            width: $xy;
+            height: $xy;
+        }
+
+        position: absolute;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+        width: 80px;
+        height: 80px;
+        margin:0 auto;
+
+        .outer {
+            box-sizing: initial;
+            border:5px solid $cyan;
+            opacity:.9;
+            border-right-color:transparent;
+            border-left-color:transparent;
+            @include square(50px);
+            margin:0 auto;
+            border-radius:50%;
+            @include box-shadow(0 0 35px $cyanShadow);
+            @include animation(spin-pulse 1s 0 linear infinite normal);
+        }
+
+        .inner {
+            box-sizing: initial;
+            border:5px solid $cyan;
+            opacity:.9;
+            border-left-color:transparent;
+            border-right-color:transparent;
+            border-radius:50%;
+            @include box-shadow(0 0 15px $cyanShadow);
+            @include square;
+            position:relative;
+            top:-50px;
+            margin:0 auto;
+            @include animation(spin-right 1s 0 linear infinite normal);
+        }
+
+        @keyframes spin-right {
+            from { transform:rotate(0deg); opacity:0.2; }
+            50% { transform:rotate(180deg); opacity:1.0; }
+            to { transform:rotate(360deg); opacity:0.2; }
+        }
+
+
+        @keyframes spin-pulse {
+            from {
+                transform:rotate(80deg);
+                opacity:0;
+                box-shadow:0 0 1px $blueShadow;
+            }
+            50% { transform:rotate(145deg); opacity:1; }
+            to { transform:rotate(-320deg); opacity:0; }
+        }
+    }
+}

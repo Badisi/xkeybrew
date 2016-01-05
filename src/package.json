@@ -1,0 +1,28 @@
+{
+  "name": "xkeybrew",
+  "productName": "XKeyBrew",
+  "version": "2.0.0",
+  "description": "XKeyBrew @ 2013-2016",
+  "homepage": "https://bitbucket.org/Badisi/xkeybrew",
+  "license": "SEE LICENSE IN file",
+  "author": {
+    "name": "Badisi"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "..."
+  },
+  "engines": {
+    "node": ">=5.1.1"
+  },
+  "dependencies": {
+    "cheerio": "latest",
+    "glob": "^6.0.1",
+    "lokijs": "latest",
+    "mkdirp": "^0.5.1",
+    "q": "latest",
+    "request": "^2.65.0",
+    "xbw": "https://github.com/Badisi/xbw/releases/download/v0.1.0/xbw-v0.1.0-node.tgz"
+  }
+}

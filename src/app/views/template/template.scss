@@ -1,0 +1,87 @@
+.xbw-template {
+
+    .template-toolbar {
+        z-index: 1902;
+        background: #f6f6f6;
+		min-height: 64px;
+        color: #202020;
+
+        .md-toolbar-tools {
+            padding: 0;
+
+            .left {
+                background: #3F51B5;
+                padding-right: 30px;
+                width: 170px;
+
+                a {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        height: 42px;
+                        width: auto;
+                        display: block;
+                    }
+
+                    h1 {
+                        margin-left: 5px;
+                        color: white;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .right {
+                padding: 0 30px 0 24px;
+
+                .md-button {
+                    &.active {
+                        md-icon {
+                            &[icon="home"],
+                            &[icon="dashboard"],
+                            &[icon="settings"] {
+                                fill: #3F51B5;
+                            }
+                        }
+                    }
+
+                    md-icon {
+                        &[icon="home"],
+                        &[icon="dashboard"],
+                        &[icon="settings"] {
+							transition: .1s linear fill;
+                            fill: #C5CAE9;
+
+                            &:hover {
+								transition: .3s linear fill;
+                                fill: #3F51B5;
+                            }
+                        }
+                    }
+
+					&.github {
+						md-icon {
+							color: rgb(34, 81, 127);
+						}
+					}
+
+                    &.paypal {
+						width: 50px;
+						md-icon {
+                        	transform: scale(2);
+						}
+                    }
+                }
+            }
+        }
+    }
+
+    md-content[ui-view="content"] {
+        overflow-x: hidden;
+    }
+}

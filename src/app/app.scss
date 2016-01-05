@@ -1,0 +1,119 @@
+// Components
+@import 'components/star-rating/star-rating';
+@import 'components/file-picker/file-picker';
+
+// Views
+@import 'views/template/template';
+@import 'views/games/games';
+@import 'views/dvdmenu/dvdmenu';
+@import 'views/options/options';
+
+// TODO: use local font instead
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic);
+@font-face {
+	font-family: 'xbw';
+    font-weight: normal;
+	font-style: normal;
+	src:url('../assets/fonts/xbw/xbw.eot?-azoef0');
+	src:url('../assets/fonts/xbw/xbw.eot?#iefix-azoef0') format('embedded-opentype'),
+		url('../assets/fonts/xbw/xbw.woff?-azoef0') format('woff'),
+		url('../assets/fonts/xbw/xbw.ttf?-azoef0') format('truetype'),
+		url('../assets/fonts/xbw/xbw.svg?-azoef0#xbw') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'xbw';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	// Better font rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog:before {
+	content: "\e600";
+}
+
+md-toast {
+	z-index: 1901;
+	margin-top: 65px;
+}
+
+// ----------------------------------------------------
+
+md-icon svg {
+	display: block;
+}
+
+md-input-container.editable-controls {
+  padding: 0;
+}
+
+md-input-container.editable-controls [ng-message] {
+  position: static;
+}
+
+form[name="editableForm"] > div {
+  height: auto;
+  padding: 5px 0;
+}
+
+form[name="editableForm"] .title {
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 5px;
+  vertical-align: top;
+  min-width: 90px;
+}
+
+form[name="editableForm"] .editable {
+  display: inline-block;
+  padding-top: 5px;
+  vertical-align: top;
+}
+
+form[name="editableForm"] select {
+  width: 120px;
+}
+
+// ----------------------------------------------------
+
+html, body {
+    -webkit-user-select: none;
+    cursor: default;
+	overflow: hidden;
+    background: none;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+  	font-size: 1rem;
+
+    .app {
+        box-sizing: border-box;
+        border-radius: .4em;
+        background: #000;
+        height: 100vh;
+    }
+
+	a {
+		color: #4054B2;
+		text-decoration: none;
+		font-weight: 400;
+		border-bottom: 1px solid rgba(64, 84, 178, 0.25);
+		transition: border-bottom 0.35s;
+	}
+
+	.drag {
+		-webkit-app-region: drag;
+	}
+
+	.no-drag {
+		-webkit-app-region: no-drag;
+	}
+}

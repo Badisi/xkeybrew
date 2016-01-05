@@ -1,0 +1,27 @@
+.xbw-extra {
+
+    .extra-list {
+        height: 511px;
+        background: red;
+
+        md-list-item {
+            background: #E3ECF5;
+
+            md-checkbox {
+                margin-right: 12px;
+            }
+
+            &:nth-child(odd) {
+                background: #D1DEEC;
+            }
+        }
+    }
+
+    .note {
+        border-top: solid 1px rgb(224,224,224);
+        padding-top: 10px;
+        margin-left: 18px;
+        font-size: 12px;
+    }
+
+}

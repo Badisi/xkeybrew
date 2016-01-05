@@ -1,0 +1,24 @@
+{
+  "name": "xbwweb",
+  "version": "2.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-aria": "latest",
+    "angular-material": "latest",
+    "angular-cookies": "latest",
+    "angular-filter": "latest",
+    "angular-material-icons": "latest",
+    "angular-messages": "latest",
+    "angular-sanitize": "latest",
+    "angular-translate": "latest",
+    "angular-translate-loader-static-files": "latest",
+    "angular-ui-router": "latest",
+    "animate.css": "latest",
+    "modernizr": "latest",
+    "ngMask": "angular-mask#latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest"
+  }
+}

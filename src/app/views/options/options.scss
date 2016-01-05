@@ -1,0 +1,21 @@
+@import 'abgx-console/abgx-console';
+@import 'about/about';
+@import 'extra/extra';
+@import 'settings/settings';
+
+.xbw-options {
+
+    [role="tabpanel"] {
+        transition: none;
+    }
+
+	md-pagination-wrapper {
+		width: 384px !important; // FIX: size is not computed correctly by angular material
+	}
+
+    md-tabs-content-wrapper {
+        //background: #f7f7f7;
+        //background: #1F2123;
+    }
+
+}

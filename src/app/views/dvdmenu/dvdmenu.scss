@@ -1,0 +1,97 @@
+.xbw-dvdmenu {
+    background: #bdc3c7;
+    text-align: center;
+    position: relative;
+    height: calc(100% - 80px);
+    overflow: hidden;
+
+    h2 {
+        font-weight: 300;
+        color: rgba(255,255,255,0.3);
+        font-size: 3.5em;
+    }
+
+    nav {
+        a {
+            position: absolute;
+            top: 51%;
+            display: block;
+            outline: none;
+            text-align: left;
+            z-index: 1000;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            > span {
+                position: relative;
+                z-index: 100;
+                display: block;
+                padding: 20px;
+                background-color: #fff;
+
+                svg {
+                    display: block;
+                    margin: 0 auto;
+                    padding: 0;
+                    fill: #34495e;
+                }
+            }
+
+            &.dv-prev {
+                left: 0;
+
+                div {
+                    left: 0;
+                    padding-right: 40px;
+                    -webkit-transform: translateY(-50%) translateX(-100%);
+                    transform: translateY(-50%) translateX(-100%);
+                }
+            }
+
+            &.dv-next {
+                right: 0;
+
+                div {
+                    right: 0;
+                    padding-left: 40px;
+                    text-align: right;
+                    -webkit-transform: translateY(-50%) translateX(100%);
+                    transform: translateY(-50%) translateX(100%);
+                }
+            }
+
+            &:hover div {
+                -webkit-transform: translateY(-50%) translateX(0);
+                transform: translateY(-50%) translateX(0);
+            }
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            padding: 0 100px;
+            background-color: #34495e;
+            -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+
+            h3 {
+                position: relative;
+                padding: 20px 0;
+                color: #fff;
+                margin: 0;
+                line-height: 1.5;
+                white-space: nowrap;
+                font-weight: 300;
+                font-size: 2em;
+                font-family: 'Lato', sans-serif;
+
+                span {
+                    display: block;
+                    color: #95a5a6;
+                    font-style: italic;
+                    font-size: 65%;
+                }
+            }
+        }
+    }
+}

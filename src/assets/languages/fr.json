@@ -1,0 +1,12 @@
+{
+    "library.name": "NOM",
+    "library.disc": "DISQUE",
+    "library.genre": "GENRE",
+    "library.developer": "DEVELOPPEUR",
+    "library.publisher": "EDITEUR",
+    "library.id": "ID",
+    "library.releaseDate": "SORTIE",
+    "library.overview": "DESCRIPTION",
+
+    "options.language": "Langue"
+}
