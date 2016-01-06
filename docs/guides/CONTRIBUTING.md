@@ -6,7 +6,7 @@
  - [Wiki](#wiki)
  - [Donate](#donate)
  
-## <a name="submit"></a> Submission Guidelines
+## <a name="submit">Submission Guidelines</a>
 
 ### Submitting an Issue
 Always search the archive before submitting your issue, maybe your question was already answered.
@@ -97,10 +97,10 @@ from the main (upstream) repository:
     git pull --ff upstream master
     ```
 
-## <a name="translation"></a> Translation
+## <a name="translation">Translation</a>
 
-## <a name="theme"></a> Theme
+## <a name="theme">Theme</a>
 
-## <a name="wiki"></a> Wiki
+## <a name="wiki">Wiki</a>
 
 ## <a name="donate">Donate</a>
