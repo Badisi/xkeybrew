@@ -1,7 +1,6 @@
 [github]: https://github.com/Badisi/xkeybrew
 [issues]: https://github.com/Badisi/xkeybrew/issues
 [pulls]: https://github.com/Badisi/xkeybrew/pulls
-[submit]: docs/guides/CONTRIBUTING.md#submit
 
 XKeyBrew
 =========
@@ -32,11 +31,9 @@ into the project.
 
 ## <a name="contributing"></a> Contributing
 
-- [Translation]()
-- [Theme]()
-- [Wiki]()
-- [Donation]()
+- [Translation](docs/guides/CONTRIBUTING.md#translation)
+- [Theme](docs/guides/CONTRIBUTING.md#theme)
+- [Wiki](docs/guides/CONTRIBUTING.md#wiki)
+- [Donate](docs/guides/CONTRIBUTING.md#donate)
 
-> Developers interested in contributing should read the following guidelines:
-> - [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
-> - [Coding Guidelines](docs/guides/CODING.md)
+> Developers interested in contributing should read the following [guidelines](docs/guides/CODING.md).
