@@ -11,7 +11,7 @@
 
 - - -
 
-| [ChangeLog](CHANGELOG.md) | [Themes](themes) | [Documentation](documentation) | [FAQ](faq) |
+[ChangeLog](CHANGELOG.md) | [Themes](themes) | [Documentation](documentation) | [FAQ](faq) 
 
 - - -
 
