@@ -4,8 +4,14 @@
 
 # Developer Contribution
 
+ - [Installing](#installing)
+ - [Building](#building)
  - [Coding Rules](#rules)
  - [Git Commit Guidelines](#commit)
+
+## <a name="installing">Installing</a>
+
+## <a name="building">Building</a>
 
 ## <a name="rules">Coding Rules</a>
 
