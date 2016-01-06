@@ -29,7 +29,7 @@ It can also creates a dvd menu that once played through the [xkey device](xk3y) 
 
 ## <a name="reports">Have a Question, Problem or Idea?</a>
 
-##### Found a Bug or Issue?
+##### > Found a Bug or Issue?
 
 If you find a bug within the application or a mistake in the documentation, you can help us by
 submitting an issue to our [Issues Tracker][issues]. Even better you can submit a fix that can
@@ -37,7 +37,7 @@ be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull 
 
 > Please review the [Submission Guidelines](submit) before contributing to the project.
 
-##### Want a Feature?
+##### > Want a Feature?
 
 You can request a new feature by submitting an issue to our [Issues Tracker][issues].
 
