@@ -99,15 +99,21 @@ from the main (upstream) repository:
 
 ## <a name="translation">Translation</a>
 
+...
+
 ## <a name="theme">Theme</a>
 
+...
+
 ## <a name="wiki">Wiki</a>
+
+...
 
 ## <a name="donate">Donate</a>
 
 As a volunteer-based individual i'm working on this project on my free time.
 
-Any contribution to the project are very much appreciated and helps me maintain the application and develop new features.
+Any contribution to the project are very much appreciated and helps maintain the application and develop new features.
 
 You can contribute via PayPal by clicking on the following icon :
 
