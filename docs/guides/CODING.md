@@ -62,7 +62,7 @@ and keep them in mind as you are working!
 
 ## <a name="commit">Git Commit Guidelines</a>
 
-Like the Angular Team we use very precise rules over how our git commit messages can be formatted. This leads to **more
+Like the Angular Team we are using very precise rules over how our git commit messages can be formatted. This leads to **more
 readable messages** that are easy to follow when looking through the **project history** but also helps to **generate** the XKeyBrew [Changelog](../../CHANGELOG.md) document.
 
 > A detailed explanation of Angular Team's guidelines and conventions can be found in this
@@ -81,7 +81,7 @@ format that includes a **type**, a **scope** and a **subject**:
 <footer>
 ```
 
-> Any line of the commit message cannot be longer 100 characters!<br/>
+> Any line of the commit message cannot be longer than 100 characters!<br/>
   This allows the message to be easier to read on github as well as in various git tools.
 
 ##### Revert
