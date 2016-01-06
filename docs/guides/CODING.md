@@ -49,7 +49,7 @@ gulp build
 
 ## <a name="rules">Coding Rules</a>
 
-To ensure consistency throughout the source code, get inspired by the following rules and keep them in mind as you are working:
+To ensure consistency throughout the source code, get inspired by the following rules:
 
 * [Javascript Style Guide](https://github.com/airbnb/javascript) (by Airbnb)
 * [Angular Style Guide](https://github.com/johnpapa/angular-styleguide#style-y001) (by John Papa)
@@ -57,6 +57,8 @@ To ensure consistency throughout the source code, get inspired by the following 
 * [Angular Optimizations](https://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations) (by Todd Motto)
 * [Angular Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices)
 * [Angular Anti-patterns](https://github.com/angular/angular.js/wiki/Anti-Patterns)
+
+and keep them in mind as you are working!
 
 ## <a name="commit">Git Commit Guidelines</a>
 
