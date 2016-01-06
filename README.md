@@ -22,7 +22,7 @@ This application is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) made b
 XKeyBrew helps you manage your xbox360 original backup games by automatically:  
 
 * extracting information from backup ISO files (id, name, ...)
-* downloading media data (cover, banner, publisher, ...)
+* downloading media data from the Internet (cover, banner, publisher, ...)
 * verifying the integrity of your backups
 
 It can also creates a dvd menu that once played through the [xkey device](xk3y) will let you choose and launch a backup on tv.
