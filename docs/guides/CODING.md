@@ -49,11 +49,14 @@ gulp build
 
 ## <a name="rules">Coding Rules</a>
 
-To ensure consistency throughout the source code, keep these rules in mind as you are working:
+To ensure consistency throughout the source code, get inspired by the following rules and keep them in mind as you are working:
 
-* All features or bug fixes **must be tested** by one or more unit-testing specs.
-* We follow the rules contained in
-    * TODO:
+* [Javascript Style Guide](https://github.com/airbnb/javascript) (by Airbnb)
+* [Angular Style Guide](https://github.com/johnpapa/angular-styleguide#style-y001) (by John Papa)
+* [Angular Style Guide](https://github.com/toddmotto/angularjs-styleguide/) (by Todd Motto)
+* [Angular Optimizations](https://www.binpress.com/tutorial/speeding-up-angular-js-with-simple-optimizations) (by Todd Motto)
+* [Angular Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices)
+* [Angular Anti-patterns](https://github.com/angular/angular.js/wiki/Anti-Patterns)
 
 ## <a name="commit">Git Commit Guidelines</a>
 
