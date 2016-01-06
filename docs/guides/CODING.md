@@ -5,13 +5,39 @@
 # Developer Contribution
 
  - [Installing](#installing)
+ - [Testing](#testing)
  - [Building](#building)
  - [Coding Rules](#rules)
  - [Git Commit Guidelines](#commit)
 
 ## <a name="installing">Installing</a>
 
+From the project's root directory:
+
+```bash
+# Install the project dependencies
+npm install -g gulp electron-prebuilt
+```
+
+## <a name="testing">Testing</a>
+
+From the project's root directory:
+
+```bash
+# Start a web server
+gulp serve
+
+# Launch the application
+gulp electron
+```
+
 ## <a name="building">Building</a>
+
+From the project's root directory:
+
+```bash
+gulp build
+```
 
 ## <a name="rules">Coding Rules</a>
 
