@@ -104,3 +104,11 @@ from the main (upstream) repository:
 ## <a name="wiki">Wiki</a>
 
 ## <a name="donate">Donate</a>
+
+As a volunteer-based individual i'm working on this project on my free time.
+
+Any contribution to the project are very much appreciated and helps me maintain the application and develop new features.
+
+You can contribute via PayPal by clicking on the following icon :
+
+[![paypal-icon](https://bytebucket.org/Badisi/xkeybrew/wiki/images/paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8VETXK2GHPDSJ)
