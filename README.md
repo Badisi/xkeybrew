@@ -4,10 +4,10 @@
 [xboxdvdmenu]: https://code.google.com/p/xkey-brew/
 [xk3y]: http://xk3y.com/
 
+> Please note that this project is still in an early development.
+
 XKeyBrew
 =========
-
-> Please note that this project is still in an early development.
 
 This project is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) application made by **diagdave** and **rejdzu**.
 
