@@ -11,13 +11,13 @@
 
 - - -
 
-[Changelog](CHANGELOG.md) | [Themes](themes) | [Documentation](documentation) | [FAQ](faq) 
+[Changelog](CHANGELOG.md) | [Themes][themes] | [Documentation][documentation] | [FAQ][faq] 
 
 - - -
 
 :zap: This project is in early development :zap: 
 
-This application is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) made by **diagdave** and **rejdzu**.
+This application is a new breath of the famous [XBoxDvdMenu][xboxdvdmenu] made by **diagdave** and **rejdzu**.
 
 XKeyBrew helps you manage your xbox360 original backup games by automatically:  
 
@@ -25,7 +25,7 @@ XKeyBrew helps you manage your xbox360 original backup games by automatically:
 * downloading media data from the Internet (cover, banner, publisher, ...)
 * verifying the integrity of your backups
 
-It can also creates a dvd menu that once played through the [xkey device](xk3y) will let you choose and launch a backup on tv.
+It can also creates a dvd menu that once played through the [xkey device][xk3y] will let you choose and launch a backup on tv.
 
 ## <a name="reports">Have a Question, Problem or Idea?</a>
 
@@ -33,9 +33,9 @@ It can also creates a dvd menu that once played through the [xkey device](xk3y) 
 
 If you find a bug within the application or a mistake in the documentation, you can help us by
 submitting an issue to our [Issues Tracker][issues]. Even better you can submit a fix that can
-be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull Request](pulls).
+be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull Request][pulls].
 
-> Please review the [Submission Guidelines](submit) before contributing to the project.
+> Please review the [Submission Guidelines][submit] before contributing to the project.
 
 ##### > Want a Feature?
 
@@ -47,7 +47,7 @@ If you would like to implement a new feature then consider what kind of change i
 submitting an issue to our [Issues Tracker][issues] so that we can better coordinate our efforts,
 prevent duplication of work and help you to craft the change so that it is successfully accepted
 into the project.
-* **Small Changes** can be crafted and submitted to XKeyBrew repository as a [Pull Request](pulls).
+* **Small Changes** can be crafted and submitted to XKeyBrew repository as a [Pull Request][pulls].
 
 
 ## <a name="contributing">Contributing</a>
