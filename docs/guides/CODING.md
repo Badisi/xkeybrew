@@ -62,11 +62,10 @@ and keep them in mind as you are working!
 
 ## <a name="commit">Git Commit Guidelines</a>
 
-We have very precise rules over how our git commit messages can be formatted. This leads to **more
-readable messages** that are easy to follow when looking through the **project history**.  But also,
-we use the git commit messages to **generate** the XKeyBrew [Changelog](../../CHANGELOG.md) document.
+Like the Angular Team we use very precise rules over how our git commit messages can be formatted. This leads to **more
+readable messages** that are easy to follow when looking through the **project history** but also helps to **generate** the XKeyBrew [Changelog](../../CHANGELOG.md) document.
 
-> A detailed explanation of guidelines and conventions can be found in this
+> A detailed explanation of Angular Team's guidelines and conventions can be found in this
   [document](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#).
 
 ### Commit Message Format
@@ -119,12 +118,14 @@ The subject contains succinct description of the change:
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
+> This information is optional
+
 ##### Footer
 
 The footer should contain any information about **Breaking Changes** and is also the place to
 reference GitHub issues that this commit **Closes**.
 
-> Breaking Changes are intended to highlight (in the ChangeLog) changes that will require community
+> Breaking Changes are intended to highlight (in the Changelog) changes that will require community
   users to modify their code with this commit.
 
 <br>
