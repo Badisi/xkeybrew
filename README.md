@@ -1,9 +1,23 @@
 [github]: https://github.com/Badisi/xkeybrew
 [issues]: https://github.com/Badisi/xkeybrew/issues
 [pulls]: https://github.com/Badisi/xkeybrew/pulls
+[xboxdvdmenu]: https://code.google.com/p/xkey-brew/
+[xk3y]: http://xk3y.com/
 
 XKeyBrew
 =========
+
+> Please note that this project is still in an early development.
+
+This project is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) application made by **diagdave** and **rejdzu**.
+
+XKeyBrew helps you manage your xbox360 original backup games by automatically:  
+
+* extracting information from backup ISO files (id, name, ...)
+* downloading media data (cover, banner, publisher, ...)
+* verifying the integrity of your backups
+
+It also additionally creates a dvd menu that once played through the [xkey device](xk3y) will let you choose and launch a desired backup on tv.
 
 ## <a name="reports">Have a Question, Problem or Idea?</a>
 
@@ -36,4 +50,4 @@ into the project.
 - [Wiki](docs/guides/CONTRIBUTING.md#wiki)
 - [Donate](docs/guides/CONTRIBUTING.md#donate)
 
-> Developers interested in contributing should read the following [guidelines](docs/guides/CODING.md).
+> Developers interested in contributing should also read the following [guidelines](docs/guides/CODING.md).
