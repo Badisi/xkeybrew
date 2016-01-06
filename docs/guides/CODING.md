@@ -7,14 +7,14 @@
  - [Coding Rules](#rules)
  - [Git Commit Guidelines](#commit)
 
-## <a name="rules"></a> Coding Rules
+## <a name="rules"></a>Coding Rules
 To ensure consistency throughout the source code, keep these rules in mind as you are working:
 
 * All features or bug fixes **must be tested** by one or more unit-testing specs.
 * We follow the rules contained in
     * TODO:
 
-## <a name="commit"></a> Git Commit Guidelines
+## <a name="commit"></a>Git Commit Guidelines
 
 We have very precise rules over how our git commit messages can be formatted. This leads to **more
 readable messages** that are easy to follow when looking through the **project history**.  But also,
