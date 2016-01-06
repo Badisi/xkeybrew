@@ -18,7 +18,7 @@ XKeyBrew helps you manage your xbox360 original backup games by automatically:
 * downloading media data (cover, banner, publisher, ...)
 * verifying the integrity of your backups
 
-It can also creates a dvd menu that once played through the [xkey device](xk3y) will let you choose and launch a desired backup on tv.
+It can also creates a dvd menu that once played through the [xkey device](xk3y) will let you choose and launch a backup on tv.
 
 ## <a name="reports">Have a Question, Problem or Idea?</a>
 
