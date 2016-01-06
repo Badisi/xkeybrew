@@ -82,6 +82,8 @@ reference GitHub issues that this commit **Closes**.
 > Breaking Changes are intended to highlight (in the ChangeLog) changes that will require community
   users to modify their code with this commit.
 
+<br>
+
 ##### Sample Commit message:
 
 ```text
