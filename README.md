@@ -15,7 +15,7 @@
 
 - - -
 
-:zap: This project is in early development :zap: 
+:zap: *This project is in early development* :zap: 
 
 This application is a new breath of the famous [XBoxDvdMenu][xboxdvdmenu] made by **diagdave** and **rejdzu**.
 
