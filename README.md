@@ -35,13 +35,13 @@ If you find a bug within the application or a mistake in the documentation, you 
 submitting an issue to our [Issues Tracker][issues]. Even better you can submit a fix that can
 be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull Request][pulls].
 
-> Please review the [Submission Guidelines][submit] before contributing to the project.
+> Please review the [Submission Guidelines](docs/guides/CONTRIBUTING.md#submit).
 
 ##### > Want a Feature?
 
 You can request a new feature by submitting an issue to our [Issues Tracker][issues].
 
-If you would like to implement a new feature then consider what kind of change it is:
+If you would like to implement a new feature yourself then consider what kind of change it is:
 
 * **Major Changes** that you wish to contribute to the project should be discussed first by
 submitting an issue to our [Issues Tracker][issues] so that we can better coordinate our efforts,
