@@ -6,9 +6,13 @@
 
 ![logo](https://bytebucket.org/Badisi/xkeybrew/wiki/images/xkeybrew.png)
 
-:zap: This project is in early development :zap: 
+- - -
 
-------
+**[Release notes](Release notes)** | **[Themes](Themes)** | **[Documentation](Documentation)** | **[FAQ](FAQ)** 
+
+- - -
+
+:zap: This project is in early development :zap: 
 
 The XKeyBrew application is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) made by **diagdave** and **rejdzu**.
 
@@ -25,11 +29,10 @@ It can also creates a dvd menu that once played through the [xkey device](xk3y) 
 ##### Found a Bug or Issue?
 
 If you find a bug within the application or a mistake in the documentation, you can help us by
-submitting an issue to our [Issues Tracker][issues]. Even better you can submit a Pull Request
-with a fix. Your custom changes can be crafted in a repository fork and submitted to XKeyBrew repository 
-as a [Pull Request](pulls).
+submitting an issue to our [Issues Tracker][issues]. Even better you can submit a fix that can
+be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull Request](pulls).
 
-> Important: Please review the [Submission Guidelines](submit) before contributing to the project.
+> Please review the [Submission Guidelines](submit) before contributing to the project.
 
 ##### Want a Feature?
 
