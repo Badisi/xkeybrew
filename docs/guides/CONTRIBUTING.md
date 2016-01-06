@@ -1,3 +1,5 @@
+[issues]: https://github.com/Badisi/xkeybrew/issues
+
 # Contributing to XKeyBrew
 
  - [Submission Guidelines](#submit)
@@ -9,7 +11,7 @@
 ## <a name="submit">Submission Guidelines</a>
 
 ### Submitting an Issue
-Always search the archive before submitting your issue, maybe your question was already answered.
+Always search the in the [Issues Tracker][issues] before submitting your issue, maybe your question was already answered.
 
 If your issue appears to be a bug, and hasn't been reported, open a new issue.
 Help us to maximize the effort we can spend fixing issues and adding new
@@ -17,13 +19,13 @@ features, by not reporting duplicate issues.  Providing the following informatio
 chances of your issue being dealt with quickly:
 
 * **Motivation for or Use Case** - explain why this is a bug for you
-* **Overview of the Issue** - if an error is being thrown
-* **XKeyBrew Version(s)** - is it a regression?
-* **Operating System** - is this a problem with all operating system or only yours?
-* **XKeyBrew Internal Logs** - accessible from the settings section of the application
-* **Steps to Reproduce the Error** - provide an unambiguous set of steps.
-* **Related Issues** - has a similar issue been reported before?
-* **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
+* **Overview of the issue** - if an error is being thrown
+* **XKeyBrew version(s)** - is it a regression?
+* **Operating system** - is this a problem with all operating system or only yours?
+* **XKeyBrew internal logs** - accessible from the settings section of the application
+* **Steps to reproduce the error** - provide an unambiguous set of steps.
+* **Related issues** - has a similar issue been reported before?
+* **Suggest a fix** - if you can't fix the bug yourself, perhaps you can point to what might be
   causing the problem (line of code or commit)
 
 ### Submitting a Pull Request
