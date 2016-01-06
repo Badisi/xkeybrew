@@ -19,8 +19,12 @@ git clone https://github.com/Badisi/xkeybrew.git
 
 Installing the project dependencies:
 ```bash
-# From the project's root directory
+# Global dependencies
 npm install -g gulp electron-prebuilt
+
+# Local dependencies
+npm install
+bower install
 ```
 
 ## <a name="testing">Testing</a>
