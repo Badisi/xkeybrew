@@ -17,7 +17,7 @@ Getting the code:
 git clone https://github.com/Badisi/xkeybrew.git
 ```
 
-Installing the project dependencies:
+Installing the dependencies:
 ```bash
 # Global dependencies
 npm install -g gulp electron-prebuilt
