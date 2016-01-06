@@ -8,7 +8,7 @@
 
 :zap: This project is in early development :zap: 
 
-======
+------
 
 The XKeyBrew application is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) made by **diagdave** and **rejdzu**.
 
