@@ -5,7 +5,7 @@
 XKeyBrew
 =========
 
-## <a name="reports"></a> Have a Question, Problem or Idea?
+## <a name="reports">Have a Question, Problem or Idea?</a>
 
 ##### Found a Bug or Issue?
 
@@ -29,7 +29,7 @@ into the project.
 * **Small Changes** can be crafted and submitted to XKeyBrew repository as a [Pull Request](pulls).
 
 
-## <a name="contributing"></a> Contributing
+## <a name="contributing">Contributing</a>
 
 - [Translation](docs/guides/CONTRIBUTING.md#translation)
 - [Theme](docs/guides/CONTRIBUTING.md#theme)
