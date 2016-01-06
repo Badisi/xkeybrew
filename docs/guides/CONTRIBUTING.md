@@ -31,7 +31,8 @@ chances of your issue being dealt with quickly:
 ### Submitting a Pull Request
 Before you submit your pull request consider the following guidelines:
 
-* Search the [archive](archive) for an open or closed Pull Request that relates to your submission. You don't want to duplicate effort.
+* Search the [archive](https://github.com/Badisi/xkeybrew/pulls) for an open or closed Pull Request that relates to your submission to avoid duplicates.
+* 
 * Make your changes in a new git branch:
 
      ```shell
