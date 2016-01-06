@@ -18,10 +18,10 @@ Help us to maximize the effort we can spend fixing issues and adding new
 features, by not reporting duplicate issues.  Providing the following information will increase the
 chances of your issue being dealt with quickly:
 
-* **Motivation for or Use Case** - explain why this is a bug for you
-* **Overview of the issue** - if an error is being thrown
 * **XKeyBrew version(s)** - is it a regression?
 * **Operating system** - is this a problem with all operating system or only yours?
+* **Motivation for or Use Case** - explain why this is a bug for you
+* **Overview of the issue** - if an error is being thrown
 * **XKeyBrew internal logs** - accessible from the settings section of the application
 * **Steps to reproduce the error** - provide an unambiguous set of steps.
 * **Related issues** - has a similar issue been reported before?
