@@ -12,10 +12,14 @@
 
 ## <a name="installing">Installing</a>
 
-From the project's root directory:
-
+Getting the code:
 ```bash
-# Install the project dependencies
+git clone https://github.com/Badisi/xkeybrew.git
+```
+
+Installing the project dependencies:
+```bash
+# From the project's root directory
 npm install -g gulp electron-prebuilt
 ```
 
