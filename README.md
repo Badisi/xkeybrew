@@ -1,3 +1,6 @@
+[themes]: https://github.com/Badisi/xkeybrew/wiki
+[documentation]: https://github.com/Badisi/xkeybrew/wiki
+[faq]: https://github.com/Badisi/xkeybrew/wiki
 [github]: https://github.com/Badisi/xkeybrew
 [issues]: https://github.com/Badisi/xkeybrew/issues
 [pulls]: https://github.com/Badisi/xkeybrew/pulls
@@ -8,7 +11,7 @@
 
 - - -
 
-**[Release notes](Release notes)** | **[Themes](Themes)** | **[Documentation](Documentation)** | **[FAQ](FAQ)** 
+**[ChangeLog](CHANGELOG.md)** | **[Themes](themes)** | **[Documentation](documentation)** | **[FAQ](faq)** 
 
 - - -
 
