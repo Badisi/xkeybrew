@@ -29,13 +29,13 @@ It can also creates a dvd menu that once played through the [xkey device][xk3y] 
 
 ## <a name="reports">Have a Question, Problem or Idea?</a>
 
+> Please review the [Submission Guidelines](docs/guides/CONTRIBUTING.md#submit).
+
 ##### > Found a Bug or Issue?
 
 If you find a bug within the application or a mistake in the documentation, you can help us by
 submitting an issue to our [Issues Tracker][issues]. Even better you can submit a fix that can
 be crafted in a repository fork and submitted to XKeyBrew repository as a [Pull Request][pulls].
-
-> Please review the [Submission Guidelines](docs/guides/CONTRIBUTING.md#submit).
 
 ##### > Want a Feature?
 
@@ -48,7 +48,6 @@ submitting an issue to our [Issues Tracker][issues] so that we can better coordi
 prevent duplication of work and help you to craft the change so that it is successfully accepted
 into the project.
 * **Small Changes** can be crafted and submitted to XKeyBrew repository as a [Pull Request][pulls].
-
 
 ## <a name="contributing">Contributing</a>
 
