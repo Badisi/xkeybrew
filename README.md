@@ -4,10 +4,9 @@
 [xboxdvdmenu]: https://code.google.com/p/xkey-brew/
 [xk3y]: http://xk3y.com/
 
-:zap: This project is in early development :zap: 
+![logo](https://bytebucket.org/Badisi/xkeybrew/wiki/images/xkeybrew.png)
 
-XKeyBrew
-=========
+:zap: This project is in early development :zap: 
 
 The XKeyBrew application is a new breath of the famous [XBoxDvdMenu](xboxdvdmenu) made by **diagdave** and **rejdzu**.
 
