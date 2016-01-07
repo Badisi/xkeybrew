@@ -70,9 +70,9 @@ Before you submit your pull request consider the following guidelines:
     git push origin my-fix-branch -f
     ```
 
-* **That's it!** Thank you for your contribution
+* That's it! Thank you for your contribution
 
-#### After your pull request is merged
+##### After your pull request is merged
 
 After your pull request is merged, you can safely delete your branch and pull the changes
 from the main (upstream) repository:
