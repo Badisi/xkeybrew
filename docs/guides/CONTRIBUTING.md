@@ -60,7 +60,9 @@ Before you submit your pull request consider the following guidelines:
 
 * If we suggest changes then:
   * Make the required updates.
+ 
   * Re-run the test suite to ensure tests are still passing.
+ 
   * Rebase your branch and force push to your GitHub repository (this will update your Pull Request):
 
     ```shell
@@ -68,7 +70,7 @@ Before you submit your pull request consider the following guidelines:
     git push origin my-fix-branch -f
     ```
 
-* **That's it! Thank you for your contribution!**
+* **That's it!** Thank you for your contribution
 
 #### After your pull request is merged
 
