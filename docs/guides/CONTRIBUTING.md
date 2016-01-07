@@ -121,7 +121,7 @@ Any contribution to the project are very much appreciated and helps maintain the
 
 [![paypal-icon](https://bytebucket.org/Badisi/xkeybrew/wiki/images/paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8VETXK2GHPDSJ)
 
-This project also use additional software (feel free to support them too):
+This project also uses additional software (feel free to support them too):
 
 * [DvdStyler](http://www.dvdstyler.org/) by Alex Thüring  
 * [abgx360](http://abgx360.xecuter.com/) by Seacrest
