@@ -35,16 +35,15 @@ Before you submit your pull request consider the following guidelines:
 
 * Make your changes in a new git branch:
 
-     ```shell
-     git checkout -b my-fix-branch master
-     ```
+    ```shell
+    git checkout -b my-fix-branch master
+    ```
 
 * Create your patch, **including appropriate test cases**.
-* Follow our [Coding Rules](#rules).
-* Commit your changes using a descriptive commit message that follows our
-  [commit message conventions](#commit-message-format) and passes our commit message presubmit hook
-  `validate-commit-msg.js`. Adherence to the [commit message conventions](#commit-message-format)
-  is required because release notes are automatically generated from these messages.
+
+* Follow our [Coding Rules](CODING.md#rules).
+
+* Commit your changes using a descriptive commit message that follows our [commit message conventions](CODING.md##commit). This is required because release notes are automatically generated from these messages.
 
      ```shell
      git commit -a
