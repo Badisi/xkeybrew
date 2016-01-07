@@ -119,6 +119,9 @@ As a volunteer-based individual i'm working on this project on my free time.
 
 Any contribution to the project are very much appreciated and helps maintain the application and develop new features.
 
-You can contribute via PayPal by clicking on the following icon :
-
 [![paypal-icon](https://bytebucket.org/Badisi/xkeybrew/wiki/images/paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8VETXK2GHPDSJ)
+
+This project also use additional software (feel free to support them too):
+
+Copyright © [DvdStyler](http://www.dvdstyler.org/) by Alex Thüring  
+Copyright © [abgx360](http://abgx360.net/)
