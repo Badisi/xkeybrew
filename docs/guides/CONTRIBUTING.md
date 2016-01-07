@@ -123,5 +123,5 @@ Any contribution to the project are very much appreciated and helps maintain the
 
 This project also use additional software (feel free to support them too):
 
-Copyright © [DvdStyler](http://www.dvdstyler.org/) by Alex Thüring  
-Copyright © [abgx360](http://abgx360.net/)
+* [DvdStyler](http://www.dvdstyler.org/) by Alex Thüring  
+* [abgx360](http://abgx360.xecuter.com/) by Seacrest
