@@ -55,12 +55,6 @@
 
         // Handler(s)
 
-		gamesCtrl.test = function(mdOpenMenu, e) {
-			$timeout(function() {
-				mdOpenMenu(e);
-			});
-		};
-
         gamesCtrl.select = function($event, item) {
             $mdDialog.show({
                 templateUrl: 'app/views/games/details/games-details.tpl.html',
