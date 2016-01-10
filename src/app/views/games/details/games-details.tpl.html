@@ -6,8 +6,7 @@
     <div class="content" layout="column" layout-fill flex>
 
         <div layout="row">
-            <input ng-model="gamesDetailsCtrl.item.game.title" ng-readonly="!isEditable">
-            <star-rating ng-model="gamesDetailsCtrl.item.game.rating"></star-rating>
+            <input class="title" ng-model="gamesDetailsCtrl.item.game.title" ng-readonly="!isEditable">
             <div flex></div>
             <md-button class="md-icon-button md-primary close" aria-label="Close" ng-click="gamesDetailsCtrl.hide()">
                 <md-icon ng-md-icon icon="close" style="fill:white" size="32"></md-icon>
@@ -15,50 +14,44 @@
         </div>
 
         <form layout="column" ng-init="isEditable=false">
-            <div layout="row">
-                <img width="219" height="300" src="file://{{ gamesDetailsCtrl.item.iso.frontCoverPath() }}" class="front-cover"/>
+            <div layout="row" layout-align="left none" layout-margin>
+				<div layout="column" layout-align="none center">
+                	<img width="219" height="300" src="file://{{ gamesDetailsCtrl.item.iso.frontCoverPath() }}" class="front-cover"/>
+					<span readonly>{{ gamesDetailsCtrl.item.game.titleId }}</span>
+					<span readonly>Disc {{ gamesDetailsCtrl.item.iso.discNumber }}/{{ gamesDetailsCtrl.item.game.discCount }}</span>
+					<star-rating ng-model="gamesDetailsCtrl.item.game.rating"></star-rating>
+				</div>
 
-                <div layout="column" flex>
+                <div layout="column">
                     <img width="420" height="95" src="file://{{ gamesDetailsCtrl.item.iso.bannerPath() }}"/>
-                    <textarea ng-model="gamesDetailsCtrl.item.game.overview" ng-readonly="!isEditable" flex></textarea>
+
+					<div layout-margin>
+						<textarea ng-model="gamesDetailsCtrl.item.game.overview" ng-readonly="!isEditable"></textarea>
+
+	                    <div>
+	                        <span class="form-label">Genre</span>
+	                        <input ng-model="gamesDetailsCtrl.item.game.genre" ng-readonly="!isEditable">
+	                    </div>
+						<div>
+	                        <span class="form-label">Developer</span>
+	                        <input ng-model="gamesDetailsCtrl.item.game.developer" ng-readonly="!isEditable">
+	                    </div>
+	                    <div>
+	                        <span class="form-label">Publisher</span>
+	                        <input ng-model="gamesDetailsCtrl.item.game.publisher" ng-readonly="!isEditable">
+	                    </div>
+					</div>
                 </div>
             </div>
 
-            <div layout="row" layout-fill flex>
-                <div layout="column" layout-fill flex>
-                    <div>
-                        <span class="title">ID</span>
-                        <span>{{ gamesDetailsCtrl.item.game.titleId }}</span>
-                    </div>
-                    <div>
-                        <span class="title">Disc</span>
-                        <span>{{ gamesDetailsCtrl.item.iso.discNumber }} / {{ gamesDetailsCtrl.item.game.discCount }}</span>
-                    </div>
-                    <div>
-                        <span class="title">Genre</span>
-                        <input ng-model="gamesDetailsCtrl.item.game.genre" ng-readonly="!isEditable">
-                    </div>
-                </div>
-                <div layout="column" layout-fill flex>
-                    <div>
-                        <span class="title">Developer</span>
-                        <input ng-model="gamesDetailsCtrl.item.game.developer" ng-readonly="!isEditable">
-                    </div>
-                    <div>
-                        <span class="title">Publisher</span>
-                        <input ng-model="gamesDetailsCtrl.item.game.publisher" ng-readonly="!isEditable">
-                    </div>
-                </div>
-            </div>
-
-            <div layout="row" layout-fill flex>
+            <!--<div layout="row" layout-fill flex>
                 <md-chips>
                     <md-chip>Test</md-chip>
                 </md-chips>
                 <md-chips ng-model="gamesDetailsCtrl.item.game.tags" readonly="!isEditable" ng-class="{'readonly':!isEditable}"
                           placeholder="Enter a tag" secondary-placeholder="+Tag">
                 </md-chips>
-            </div>
+            </div>-->
 
             <div layout="row" layout-align="end center" layout-fill>
                 <md-button class="cancel-button md-fab md-mini md-warn ng-hide" aria-label="Cancel" ng-click="isEditable=false" ng-show="isEditable">
