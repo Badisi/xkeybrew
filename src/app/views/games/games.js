@@ -47,11 +47,11 @@
 
         // Watcher(s)
 
-        /*$scope.$watch('gamesCtrl.items', function(newValue, oldValue) {
+        $scope.$watch('gamesCtrl.items', function(newValue, oldValue) {
             if( newValue !== oldValue ) {
                 gamesCtrl.filterItems();
             }
-        }, true);*/
+        }, true);
 
         // Handler(s)
 
@@ -85,7 +85,6 @@
                 });
         };
         gamesCtrl.filterItems();
-
 
         /*var test = function() {
             gamesCtrl.select($('md-grid-tile')[0], gamesCtrl.items[5]);
