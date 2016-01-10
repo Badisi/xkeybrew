@@ -55,13 +55,14 @@
 
         // Handler(s)
 
+		var gamesContainerView = angular.element(document.querySelector('div.xbw-games').parentNode);
         gamesCtrl.select = function($event, item) {
             $mdDialog.show({
                 templateUrl: 'app/views/games/details/games-details.tpl.html',
                 controller: 'GamesDetailsCtrl',
                 controllerAs: 'gamesDetailsCtrl',
                 bindToController: true,
-                parent: angular.element(document.querySelector('md-content[ui-view="content"]')),
+                parent: gamesContainerView,
                 targetEvent: $event,
                 clickOutsideToClose: false,
                 locals: { item:item }
