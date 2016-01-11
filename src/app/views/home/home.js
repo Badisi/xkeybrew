@@ -24,19 +24,19 @@
     // Routes
     app.config(function( $stateProvider ) {
         $stateProvider
-            .state('dvdmenu', {
+            .state('home', {
                 parent: 'template',
-                url: '/dvdmenu',
+                url: '/home',
                 views: {
                     'content': {
-                        templateUrl: 'app/views/dvdmenu/dvdmenu.tpl.html',
-						controllerAs: 'dvdMenuCtrl',
-                        controller: 'DvdMenuCtrl',
+                        templateUrl: 'app/views/home/home.tpl.html',
+                        controller: 'HomeCtrl',
+						controllerAs: 'homeCtrl',
                         bindToController: true
                     }
                 }
             })
-            .state('dvdmenu.view', {
+            .state('home.view', {
                 url: '/:index',
                 controller: function($scope, $stateParams) {
                     $scope.setCurrentMenuIndex(parseInt($stateParams.index));
@@ -45,29 +45,29 @@
     });
 
     // Controller
-    app.controller('DvdMenuCtrl', function() {
-        var dvdMenuCtrl = this;
+    app.controller('HomeCtrl', function() {
+        var homeCtrl = this;
 
-        dvdMenuCtrl.currentMenuIndex = -1;
-        dvdMenuCtrl.currentMenu = null;
-        dvdMenuCtrl.previousMenu = null;
-        dvdMenuCtrl.nextMenu = null;
+        homeCtrl.currentMenuIndex = -1;
+        homeCtrl.currentMenu = null;
+        homeCtrl.previousMenu = null;
+        homeCtrl.nextMenu = null;
 
         // Helper(s)
         /*function getMenuAtIndex(index) {
             return (index >= 0 && index < menus.length) ? menus[index] : null;
         }
 
-        dvdMenuCtrl.setCurrentMenuIndex = function(index) {
+        homeCtrl.setCurrentMenuIndex = function(index) {
             if( (index >= 0) && (index < menus.length) ) {
-                dvdMenuCtrl.currentMenuIndex = index;
+                homeCtrl.currentMenuIndex = index;
             }
-            dvdMenuCtrl.currentMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex);
-            dvdMenuCtrl.previousMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex - 1);
-            dvdMenuCtrl.nextMenu = getMenuAtIndex(dvdMenuCtrl.currentMenuIndex + 1);
+            homeCtrl.currentMenu = getMenuAtIndex(homeCtrl.currentMenuIndex);
+            homeCtrl.previousMenu = getMenuAtIndex(homeCtrl.currentMenuIndex - 1);
+            homeCtrl.nextMenu = getMenuAtIndex(homeCtrl.currentMenuIndex + 1);
         };*/
     });
 
-}(angular.module('xbw.dvdmenu', [
+}(angular.module('xbw.home', [
     'xbw.common'
 ])));

@@ -7,7 +7,7 @@
         //$mdThemingProvider.theme('altTheme').primaryPalette('purple');
 
         // Routes
-        $urlRouterProvider.otherwise('/dvdmenu');
+        $urlRouterProvider.otherwise('/home');
 
         // Localizations
         $translateProvider.useSanitizeValueStrategy('sanitize');

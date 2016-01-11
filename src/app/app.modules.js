@@ -48,8 +48,8 @@
     // Views
     angular.module('xbw.views', [
         'xbw.template',
+		'xbw.home',
         'xbw.games',
-        'xbw.dvdmenu',
         'xbw.options'
     ]);
 
