@@ -9,8 +9,8 @@
             views: {
                 'content': {
                     templateUrl: 'app/views/options/options.tpl.html',
+					controller: 'OptionsCtrl',
 					controllerAs: 'optionsCtrl',
-                    controller: 'OptionsCtrl',
                     bindToController: true
                 }
             }
