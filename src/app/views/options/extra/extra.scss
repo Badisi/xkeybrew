@@ -2,19 +2,22 @@
 
     .extra-list {
         height: 511px;
-        background: red;
 
-        md-list-item {
-            background: #E3ECF5;
+		md-list {
+			padding: 0;
+			
+	        md-list-item {
+	            background: #E3ECF5;
 
-            md-checkbox {
-                margin-right: 12px;
-            }
+	            md-checkbox {
+	                margin-right: 12px;
+	            }
 
-            &:nth-child(odd) {
-                background: #D1DEEC;
-            }
-        }
+	            &:nth-child(odd) {
+	                background: #D1DEEC;
+	            }
+	        }
+		}
     }
 
     .note {
