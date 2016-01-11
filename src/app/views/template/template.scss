@@ -39,6 +39,20 @@
             .right {
                 padding: 0 30px 0 24px;
 
+				.title {
+					color: rgba(102, 167, 27, 0.5);
+				    padding-left: 30px;
+				    margin-left: 20px;
+				    border-left: 1px solid #C5CAE9;
+				    line-height: 24px;
+					span {
+						display: none;
+						&.active {
+							display: inherit;
+						}
+					}
+				}
+
                 .md-button {
                     &.active {
                         md-icon {
