@@ -45,7 +45,7 @@
 				    margin-left: 20px;
 				    border-left: 1px solid #C5CAE9;
 				    line-height: 24px;
-					span {
+					span[ui-sref-active] {
 						display: none;
 						&.active {
 							display: inherit;
