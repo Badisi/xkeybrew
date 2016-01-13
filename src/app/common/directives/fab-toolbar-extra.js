@@ -21,15 +21,15 @@
 
                 return {
                     post: function postLink(scope, el) {
-						var querySelector = function(selector) {
-							return angular.element(el[0].querySelector(selector));
+						var query = function(selector) {
+							return angular.element(el[0].querySelectorAll(selector));
 						};
 
                         // Hack on md-fab-toolbar to make use of a flex spacer
-                        querySelector('span[spacer]').parent().addClass('flex');
+                        query('span[spacer]').parent().addClass('flex');
 
                         // Hack on md-fab-toolbar to make children hidden by default
-                        querySelector('.md-fab-action-item').css('transition-delay', '325ms');
+                        query('.md-fab-action-item').css('transition-delay', '200ms');
                     },
                     pre: function preLink(scope, el) {
                         scope.$on('$destroy', function() {
