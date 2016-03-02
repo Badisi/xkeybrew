@@ -7,7 +7,7 @@
         //$mdThemingProvider.theme('altTheme').primaryPalette('purple');
 
         // Routes
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/games');
 
         // Localizations
         $translateProvider.useSanitizeValueStrategy('sanitize');
@@ -24,9 +24,9 @@
     });
 
     // Controller
-    app.controller('AppCtrl', function( $scope, Config, Logger, Store ) {
+    app.controller('AppCtrl', function( $scope, Config, Logger, Store, Themes ) {
 
-        function loadApp() {
+        function loadData() {
             return Store.load()
                 .then(function() {
                     $scope.$apply();
@@ -37,6 +37,13 @@
                 });
         }
 
+		function loadThemes() {
+			return Themes.loadAll().fail(function(err) {
+				// TODO: show alert message
+                Logger.error(err);
+			});
+		}
+
         function loadConfig() {
             return Config.load().fail(function(err) {
                 // TODO: show alert message
@@ -45,8 +52,8 @@
         }
 
         function init() {
-            // TODO: check weither we could loadApp even if fail
-            loadConfig().then(loadApp);
+            // TODO: check weither we could loadData even if fail
+            loadConfig().then(loadThemes).then(loadData);
         }
         init();
 

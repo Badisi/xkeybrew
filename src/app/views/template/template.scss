@@ -1,10 +1,9 @@
 .xbw-template {
 
     .template-toolbar {
-        z-index: 1902;
+        //z-index: 1902;
         background: #f6f6f6;
 		min-height: 64px;
-        color: #202020;
 
         .md-toolbar-tools {
             padding: 0;
@@ -39,7 +38,23 @@
             .right {
                 padding: 0 30px 0 24px;
 
-				.title {
+				md-select {
+					.md-select-value {
+						color: rgba(102, 167, 27, 0.5);
+						//color: #3F51B5;
+						border: none;
+					}
+					.md-select-icon::after {
+						transform: scaleY(0.4) scaleX(0.6);
+					}
+				}
+
+				.md-button md-icon {
+					color: rgba(102, 167, 27, 0.5);
+					//color: #3F51B5;
+				}
+
+				/*.title {
 					color: rgba(102, 167, 27, 0.5);
 				    padding-left: 30px;
 				    margin-left: 20px;
@@ -51,7 +66,7 @@
 							display: inherit;
 						}
 					}
-				}
+				}*/
 
                 .md-button {
                     &.active {

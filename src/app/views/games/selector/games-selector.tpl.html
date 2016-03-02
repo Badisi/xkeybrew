@@ -1,0 +1,18 @@
+<md-toast class="games-selector">
+	<span>Validate </span>
+	<md-select aria-label="choice"
+			   ng-model="gamesSelectorCtrl.currentChoice"
+			   ng-change="gamesSelectorCtrl.choiceChange()"
+			   md-container-class="games-selector-select">
+		<md-option ng-value="choice" ng-repeat="choice in gamesSelectorCtrl.choices">
+			{{ choice }}
+		</md-option>
+	</md-select>
+	<span> games with abgx360 ?</span>
+	<md-button class="btn-ok" ng-click="gamesSelectorCtrl.resolve(true)">
+		OK
+	</md-button>
+	<md-button class="btn-cancel" ng-click="gamesSelectorCtrl.resolve(false)">
+		CANCEL
+	</md-button>
+</md-toast>

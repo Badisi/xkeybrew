@@ -1,0 +1,32 @@
+<section class="dvd-menu" layout="column" layout-fill flex>
+
+	<ng-md-icon class="previous"
+				icon="keyboard_arrow_left"
+				ng-if="dvdMenuCtrl.currentPage().index > 0"
+				ng-click="dvdMenuCtrl.previousPage()">
+	</ng-md-icon>
+
+	<ng-md-icon class="next"
+				icon="keyboard_arrow_right"
+				ng-if="!dvdMenuCtrl.currentPage().isLast"
+				ng-click="dvdMenuCtrl.nextPage()">
+	</ng-md-icon>
+
+	<span class="category"
+		  ng-if="!(dvdMenuCtrl.games.config.groupBy.key === 'none')">
+		{{ dvdMenuCtrl.currentPage().category }}
+	</span>
+
+	<span class="cover{{ index }}"
+		  ng-if="index < dvdMenuCtrl.currentPage().data.length"
+		  ng-repeat="index in dvdMenuCtrl.currentPage().layout.cover"
+		  ng-style="{ 'background-image':dvdMenuCtrl.getCoverForIndex(index) }">
+  	</span>
+
+	<span class="banner{{ index }}"
+		  ng-if="index < dvdMenuCtrl.currentPage().data.length"
+		  ng-repeat="index in dvdMenuCtrl.currentPage().layout.banner"
+		  ng-style="{ 'background-image':dvdMenuCtrl.getBannerForIndex(index) }">
+  	</span>
+
+</section>

@@ -1,6 +1,21 @@
 (function(app) {
     'use strict';
 
+	// Factory
+	app.factory('AbgxConsole', function( $mdBottomSheet ) {
+		return {
+			show: function(files, callback) {
+				return $mdBottomSheet.show({
+	                templateUrl: 'app/views/games/abgx-console/abgx-console.tpl.html',
+	                controller: 'AbgxConsoleCtrl',
+	                controllerAs: 'abgxConsoleCtrl',
+	                bindToController: true,
+	                locals: { files:files }
+	            }).then(callback, callback);
+			}
+		};
+	});
+
     // Controller
     app.controller('AbgxConsoleCtrl', function( $scope, $document, $timeout, $mdBottomSheet, Config, Worker, files ) {
         var abgxConsoleCtrl = this;
@@ -85,7 +100,7 @@
         // CONSTRUCTOR
 
         (function() {
-            // Delay it as iframe is not yet accessible on dom
+            // Delay it as iframe is not yet accessible in dom
             timer = $timeout(function() {
                 iframeEl = document.getElementById('iframe');
                 iframeWin = iframeEl.contentWindow;
@@ -95,5 +110,5 @@
         })();
     });
 
-}(angular.module('xbw.options.abgx-console', [
+}(angular.module('xbw.games.abgx-console', [
 ])));

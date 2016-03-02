@@ -17,12 +17,12 @@
     "node": ">=5.1.1"
   },
   "dependencies": {
-    "cheerio": "latest",
-    "glob": "^6.0.1",
-    "lokijs": "latest",
+    "cheerio": "^0.20.0",
+    "glob": "^7.0.0",
+    "lokijs": "^1.3.15",
     "mkdirp": "^0.5.1",
     "q": "latest",
-    "request": "^2.65.0",
+    "request": "^2.69.0",
     "xbw": "https://github.com/Badisi/xbw/releases/download/v0.1.0/xbw-v0.1.0-node.tgz"
   }
 }

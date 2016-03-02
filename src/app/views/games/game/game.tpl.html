@@ -1,0 +1,13 @@
+<div ng-class="{ 'select-mode':gameCtrl.selectMode, 'selected':gameCtrl.item.$selected }"
+ 	 class="game"
+	 layout-fill>
+	<md-checkbox ng-if="gameCtrl.selectMode"
+				 aria-label="Game selection"
+				 ng-click="$event.stopPropagation()"
+				 ng-model="gameCtrl.item.$selected">
+	</md-checkbox>
+	<div background="{{ gameCtrl.item.iso.frontCoverPath() }}"
+		 class="cover"
+		 flex>
+	</div>
+</div>

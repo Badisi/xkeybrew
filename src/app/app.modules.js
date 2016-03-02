@@ -27,6 +27,7 @@
         //'xbw.clickoutside',
 		'xbw.fabtoolbarextra',
         'xbw.background',
+		'xbw.mdtoast',
         'xbw.http',
     ]);
 
@@ -36,7 +37,8 @@
         'xbw.logger',
         'xbw.config',
         'xbw.worker',
-        'xbw.store'
+        'xbw.store',
+		'xbw.themes'
     ]);
 
     // VO

@@ -12,8 +12,12 @@
     });
 
 	// Controller
-	app.controller('TemplateCtrl', function( Utils, CFG_URLS ) {
+	app.controller('TemplateCtrl', function( Utils, Config, Themes, CFG_URLS ) {
 		var templateCtrl = this;
+
+		templateCtrl.themes = Themes;
+
+		// HANDLER(s)
 
 		templateCtrl.openGithub = function() {
 			Utils.openURL(CFG_URLS.github);
@@ -22,6 +26,7 @@
 		templateCtrl.openPaypal = function() {
 			Utils.openURL(CFG_URLS.paypal);
 		};
+
 	});
 
 }(angular.module('xbw.template', [

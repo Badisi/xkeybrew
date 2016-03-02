@@ -39,8 +39,10 @@
 }
 
 md-toast {
-	z-index: 1901;
-	margin-top: 65px;
+	&.md-center {
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
 }
 
 // ----------------------------------------------------

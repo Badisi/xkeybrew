@@ -1,0 +1,36 @@
+.game {
+	background: #34495e;
+	cursor: pointer;
+	overflow: hidden;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&.select-mode {
+		transition: filter 0.2s;
+		filter: opacity(0.4) grayscale(1);
+		&:hover,
+		&.selected {
+			filter: none;
+		}
+	}
+
+	md-checkbox {
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 2px;
+		z-index: 2;
+
+		&:not(.md-checked) {
+			.md-icon {
+				background: white;
+			}
+		}
+	}
+
+	.cover {
+		min-height: 100%;
+		max-width: 100%;
+	}
+}

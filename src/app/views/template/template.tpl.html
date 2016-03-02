@@ -11,7 +11,7 @@
             </div>
 
             <div class="right md-toolbar-item" layout="row" layout-align="start center" layout-fill flex>
-                <md-button class="md-icon-button"
+                <!--<md-button class="md-icon-button"
                            md-ink-ripple="#3F51B5"
                            aria-label="home"
                            ui-sref-active="active"
@@ -25,23 +25,47 @@
                            ui-sref-active="active"
                            ui-sref="games">
                     <md-icon ng-md-icon icon="dashboard"></md-icon>
-                </md-button>
+                </md-button>-->
 
-                <md-button class="md-icon-button"
-                           md-ink-ripple="#3F51B5"
-                           aria-label="options"
-                           ui-sref-active="active"
-                           ui-sref="options">
-                    <md-icon ng-md-icon icon="settings"></md-icon>
-                </md-button>
-
-				<span class="title">
+				<!--<span class="title">
 					<span ui-sref-active="active" ui-sref="home">DASHBOARD</span>
 					<span ui-sref-active="active" ui-sref="games">MY GAMES</span>
 					<span ui-sref-active="active" ui-sref="options">OPTIONS</span>
-				</span>
+				</span>-->
+
+				<md-select aria-label="Theme"
+						   ng-model="templateCtrl.themes.current"
+						   md-container-class="theme-select-container">
+      				<md-option ng-value="theme" ng-repeat="theme in templateCtrl.themes.items">
+						{{ theme.name }}
+					</md-option>
+    			</md-select>
 
 				<span flex></span>
+
+				<md-button class="md-icon-button"
+                           md-ink-ripple="#3F51B5"
+                           aria-label="search">
+                    <md-icon ng-md-icon icon="search"></md-icon>
+                </md-button>
+
+				<md-menu>
+      				<md-button class="md-icon-button"
+							   aria-label="Filter"
+							   ng-click="$mdOpenMenu($event)">
+        				<md-icon ng-md-icon icon="sort"></md-icon>
+      				</md-button>
+      				<md-menu-content>
+        				<md-menu-item>
+							<md-button class="md-accent"
+									   ng-class="{ 'indent':(gamesCtrl.config.groupBy !== item) }"
+									   ng-click="gamesCtrl.config.groupBy = item; gamesCtrl.filterItems();">
+								<md-icon ng-md-icon icon="check" ng-if="gamesCtrl.config.groupBy === item"></md-icon>
+								{{ item.label | translate }}
+							</md-button>
+        				<md-menu-item>
+      				</md-menu-content>
+    			</md-menu>
 
                 <md-button class="md-icon-button paypal"
                            aria-label="Contribute"
@@ -58,6 +82,15 @@
                    <md-tooltip md-autohide>View on Github</md-tooltip>
                    <md-icon ng-md-icon icon="github-circle"></md-icon>
                 </md-button>
+
+				<md-button class="md-icon-button"
+						   md-ink-ripple="#3F51B5"
+						   aria-label="options"
+						   ui-sref-active="active"
+						   ui-sref="options">
+				   	<md-tooltip md-autohide>Settings</md-tooltip>
+					<md-icon ng-md-icon icon="settings"></md-icon>
+				</md-button>
             </div>
 
         </div>

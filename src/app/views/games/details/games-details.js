@@ -1,6 +1,25 @@
 (function(app) {
     'use strict';
 
+	// Factory
+	app.factory('GamesDetails', function( $mdDialog ) {
+		return {
+			show: function(event, item, callback) {
+				return $mdDialog.show({
+					templateUrl: 'app/views/games/details/games-details.tpl.html',
+					controller: 'GamesDetailsCtrl',
+					controllerAs: 'gamesDetailsCtrl',
+					bindToController: true,
+					parent: angular.element(document.querySelector('div.xbw-games').parentNode),
+					targetEvent: event,
+					clickOutsideToClose: false,
+					hasBackdrop: false,
+					locals: { item:item }
+				}).then(callback, callback);
+			}
+		};
+	});
+
     // Controller
     app.controller('GamesDetailsCtrl', function( $scope, $mdDialog, item ) {
         var gamesDetailsCtrl = this;

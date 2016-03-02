@@ -39,7 +39,7 @@
     var FILES = {
         store: 'xbw.db',
         config: 'xbw.cfg',
-        layout: 'layout.xml',
+        layout: 'layout.css',
         dvds: 'theme.dvds',
         iso: 'menu.iso',
         xsk: 'menu.xsk',
@@ -95,7 +95,7 @@
         language: 'en',
         //bannerSource: '',
         //frontCoverSource: '',
-        //lastUsedTheme: '',
+        lastUsedTheme: 'Default',
         //showCache: false,
         //buildDvds: true,
         //buildIso: true,

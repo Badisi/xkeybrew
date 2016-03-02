@@ -1,0 +1,29 @@
+.dvd-menu {
+
+	position: relative;
+	* {
+		position: absolute;
+	}
+
+	.previous {
+		z-index: 100;
+		cursor: pointer;
+		top: calc(50% - 24px);
+		left: 20px;
+		outline: 0;
+	}
+
+	.next {
+		z-index: 100;
+		cursor: pointer;
+		top: calc(50% - 24px);
+		right: 20px;
+		outline: 0;
+	}
+
+	span[class^="cover"] {
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+}

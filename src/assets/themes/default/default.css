@@ -1,0 +1,8 @@
+.xbw-games {
+	background: #282C34;
+    background-image: url(http://www.transparenttextures.com/patterns/always-grey.png);
+}
+
+md-grid-tile {
+    border: 1px solid yellow;
+}
